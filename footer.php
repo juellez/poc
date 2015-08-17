@@ -42,23 +42,23 @@ if($tweetfeedmeta == '1' || true){ ?>
 				<div class="copyright span4 alpha omega"> <?php echo stripslashes(sketch_get_option($advertica_shortname."_copyright")); ?> </div>
 
 				<div class="footer-list span3 alpha omega"><h4>Get Informed</h4>
-					<a href="#">For Parents</a>
+					<a href="/parents">For Parents</a>
 					<br />
-					<a href="#">For School Administrators</a>
+					<a href="/school-administrators">For School Administrators</a>
 					<br />
-					<a href="#">Resources</a>
+					<a href="/resources">Resources</a>
 					<br />
-					<a href="#">News</a>
+					<a href="/news">News</a>
 					<br />
 				</div>
 				<div class="footer-list span3 alpha omega"><h4>Get Involved</h4>
-					<a href="#">Parents</a>
+					<a href="/get-involved/parents">Parents</a>
 					<br />
-					<a href="#">Concerned Citizens</a>
+					<a href="/get-involved/concerned-citizens">Concerned Citizens</a>
 					<br />
-					<a href="#">Join Us</a>
+					<a href="/get-involed">Join Us</a>
 					<br />
-					<a href="#">Donate</a>
+					<a href="/donate">Donate</a>
 					<br />
 				</div>
 				<div class="footer-list span2 alpha omega"><h4>Follow Us</h4>

@@ -22,7 +22,7 @@
 		<h3>Should I send my child to the Good News Club?</h3>
 		<div class="cta-main">
 		 <hr class="double" />
-		 <div class="btn-pad"><a class="button main" href="/10-questions-for-parents/">Get the Questions</a></div>
+		 <div class="btn-pad"><a class="button main" href="/parents/">Get the Questions</a></div>
 		</div>
 	</div>
 </div>
