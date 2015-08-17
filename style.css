@@ -94,6 +94,10 @@ a, img, a img, input[type="text"], input[type="password"], input, textarea {outl
 a:hover{ color: #555; }
 
 
+body.page { background-color: #F1F1F1; }
+body.front-page { background-color: #fff; }
+
+
 /* =Header
 -------------------------------------------------------------- */
 body.page-template-template-front-page-php #main{margin-top:0 !important;}
@@ -141,7 +145,7 @@ body.page-template-template-front-page-php #main{margin-top:0 !important;}
 /* =Content
 -------------------------------------------------------------- */
 #container {}
-#main {  padding: 0 0 0px;  background: none repeat scroll 0 0 #FEFEFE; }
+#main {  padding: 0 0 0px; }
 #content {  word-wrap: break-word;  -ms-word-wrap: break-word; }
 .left-sidebar #content{margin-top:0px;}
 .container.post-wrap { margin-top: 60px;  }
@@ -206,7 +210,7 @@ body.page .edit-link {  clear: both;  display: block;  }
 
 /* = page title css
 -------------------------------------------------------------- */
-.bread-title-holder{background-color: #F8F8F8;display: block;height: 150px; position: relative; text-align: center; width: 100%;  }
+.bread-title-holder{background-color: #F8F8F8;display: block;height: 150px; position: relative; width: 100%;  }
 .bread-title-holder .container { display: table;height: 100%; position: relative;}
 .bread-title-holder .container .row-fluid { display: table-cell; vertical-align: middle;}
 .bread-title-holder  .cont_nav {display: block; margin-top:11px; position: relative;}
@@ -214,7 +218,19 @@ body.page .edit-link {  clear: both;  display: block;  }
 
 /* = front css
 -------------------------------------------------------------- */
-#featured-box{margin-top:95px;}
+.page #featured-box {
+    background-color: #fff;
+    padding: 80px 0;
+    margin: 0;
+    -webkit-box-shadow: 0px -2px 15px rgba(10, 10, 10, 0.25);
+    -moz-box-shadow:    0px -2px 15px rgba(10, 10, 10, 0.25);
+    box-shadow:         0px -2px 15px rgba(10, 10, 10, 0.25);
+}
+.front-page #featured-box{
+    margin-top:95px;
+    padding: 0;
+    box-shadow: none;
+}
 .skt-section{margin-top:65px;}
 .skt-iconbox.iconbox-top {text-align: center;}
 .skt-iconbox.iconbox-top p{margin:0;}
@@ -249,7 +265,13 @@ body.page .edit-link {  clear: both;  display: block;  }
 .full-content-box{ padding: 60px 0 50px;position: relative; }
 .full-content-box .span5 > h2 {line-height: 28px;}
 .full-bg-image-fixed{background-image: url("images/PArallax_Vimeo_bg.jpg"); }
-.bread-title-holder h1.title {font-size: 25px;margin:0;line-height:30px;color:#222;}
+.bread-title-holder h1.title {color:#222;
+    font-family: "OpenSansBold", sans-serif;
+font-size: 25px;
+margin: 112px 0 0 0;
+line-height: 30px;
+font-weight: bold;
+}
 .bread-title-holder .cont_nav_inner a,.bread-title-holder .cont_nav_inner p{font-size:12px;}
 .bread-title-holder .skt-breadcrumbs-separator { color: #666666;font-family: 'Trebuchet MS';font-size: 10px;letter-spacing: -1px;margin: 0 3px;position: relative;}
 .full-bg-breadimage-fixed{ background-attachment: fixed; background-repeat: repeat;background-size: cover;-webkit-background-size: cover;

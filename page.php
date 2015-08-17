@@ -17,10 +17,12 @@ get_header();
 	<?php while(have_posts()) : the_post(); ?>
 		<div class="bread-title-holder">
 			<div class="bread-title-bg-image full-bg-breadimage-fixed"></div>
+			<span class="img-cover"></span>
 			<div class="container">
 				<div class="row-fluid">
 					<div class="container_inner clearfix">
 						<h1 class="title"><?php the_title(); ?></h1>
+
 						<?php  if(sketch_get_option($advertica_shortname."_hide_bread") == 'true') {
 							if ((class_exists('advertica_breadcrumb_class'))) {$advertica_breadcumb->custom_breadcrumb();}
 						}
@@ -62,5 +64,8 @@ get_header();
 			</div>
 		</div>
 	</div>
+
+	<?php include("includes/front-featured-boxes-section.php"); ?>
+
 </div>
 <?php get_footer(); ?>
