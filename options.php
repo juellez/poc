@@ -173,9 +173,9 @@ function optionsframework_options() {
 			'std' => '#222222',
 			'type' => 'color' );		
 	//Blog	
-	$options[] = array(
-		'name' => __('Blog Page Settings', 'advertica-lite'),
-		'type' => 'heading');
+	// $options[] = array(
+	// 	'name' => __('Blog Page Settings', 'advertica-lite'),
+	// 	'type' => 'heading');
 
 	//Blog page Title
 	$options[] = array(
@@ -309,9 +309,9 @@ function optionsframework_options() {
 
 
 	//Front Page Parallax Box Options	
-	$options[] = array(
-		'name' => __('Home Parallax Section', 'advertica-lite'),
-		'type' => 'heading');
+	// $options[] = array(
+	// 	'name' => __('Home Parallax Section', 'advertica-lite'),
+	// 	'type' => 'heading');
 
 	$options[] = array(
 			'name' => __('Parallax Section Background Image (size: width * height (1600x * 1000px) )', 'advertica-lite'),
@@ -331,7 +331,7 @@ function optionsframework_options() {
 
 	//Front Page Options	
 	$options[] = array(
-		'name' => __('Home Clients Logo Section', 'advertica-lite'),
+		'name' => __('Home Get Informed Section', 'advertica-lite'),
 		'type' => 'heading');
 
 	$options[] = array(

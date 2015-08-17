@@ -29,7 +29,8 @@ if($tweetfeedmeta == '1' || true){ ?>
 	<div id="full-twitter-box">
 		<div class="container">
 			<div class="row-fluid">
-				The latest tweets right here! via @protectoregonchildren
+				<img src="/images/twitter-white.png" alt="Twitter" class="footer-twitter" />
+				The latest tweets right here! <span class="footer-twitter-handle">via @protectoregonchildren</span>
 			</div>
 		</div>
 	</div>
@@ -40,29 +41,29 @@ if($tweetfeedmeta == '1' || true){ ?>
 				<?php $sktURL = 'http://www.sketchthemes.com/'; ?>
 				<div class="copyright span4 alpha omega"> <?php echo stripslashes(sketch_get_option($advertica_shortname."_copyright")); ?> </div>
 
-				<div class="footer-list span2 alpha omega"><h4>Follow Us</h4>
-
-				</div>
-				<div class="footer-list span2 alpha omega"><h4>Get Involved</h4>
-					<a href="#">Donate</a>
-					<br />
-
-				</div>
-				<div class="footer-list span2 alpha omega"><h4>News</h4>
-					<a href="#">Press Releases</a>
-					<br />
-					<a href="#">Local Stories</a>
-					<br />
-					<a href="#">National Stories</a>
-					<br />
-				</div>
-				<div class="footer-list span2 alpha omega"><h4>Get Informed</h4>
+				<div class="footer-list span3 alpha omega"><h4>Get Informed</h4>
 					<a href="#">For Parents</a>
 					<br />
 					<a href="#">For School Administrators</a>
 					<br />
-					<a href="#">For Concerned Citizens</a>
+					<a href="#">Resources</a>
 					<br />
+					<a href="#">News</a>
+					<br />
+				</div>
+				<div class="footer-list span3 alpha omega"><h4>Get Involved</h4>
+					<a href="#">Parents</a>
+					<br />
+					<a href="#">Concerned Citizens</a>
+					<br />
+					<a href="#">Join Us</a>
+					<br />
+					<a href="#">Donate</a>
+					<br />
+				</div>
+				<div class="footer-list span2 alpha omega"><h4>Follow Us</h4>
+					<a href="http://facebook.com/protectoregonchildren" title="Facebook"><span class="footer-social sprite-facebook"></a>
+					<a href="#" title="Twitter"><span class="footer-social sprite-twitter"></a>
 				</div>
 
 				<div class="clearfix"></div>

@@ -67,7 +67,7 @@
 	#skenav .ske-menu #menu-secondary-menu li a:hover, #skenav .ske-menu #menu-secondary-menu .current-menu-item a{color: #71C1F2;  }
 	.footer-seperator{background-color: rgba(0,0,0,.2);}
 	#skenav .ske-menu #menu-secondary-menu li .sub-menu li {	margin: 0;  }
-
+	.poc-image-subhdr div { background-color: <?php if(isset($breadcolor)){ echo $breadcolor; } ?>; color: <?php if(isset($skt_bread_title_color)){ echo $skt_bread_title_color; } ?>; }
 
 	@media only screen and (max-width : 1025px) {
 		#menu-main {

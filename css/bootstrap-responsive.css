@@ -1003,8 +1003,11 @@
 	#portfolio-division-box .port-title {
 		float:none;
 	}
-	#portfolio-division-box h3, #full-client-box h3, #team-division-box h3,#footer .third_wrapper .copyright,#footer .third_wrapper .owner {
+	#portfolio-division-box h3, #full-client-box h3, #team-division-box h3,#footer .third_wrapper .copyright,#footer .third_wrapper .footer-list,#footer .third_wrapper .owner {
 		text-align:center;
+	}
+	#footer .third_wrapper .footer-list{
+		margin-top: 2em;
 	}
 	#portfolio-division-box .border_left, #full-client-box .border_left {
 		margin:0 auto;
