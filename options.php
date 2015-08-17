@@ -313,21 +313,21 @@ function optionsframework_options() {
 	// 	'name' => __('Home Parallax Section', 'advertica-lite'),
 	// 	'type' => 'heading');
 
-	$options[] = array(
-			'name' => __('Parallax Section Background Image (size: width * height (1600x * 1000px) )', 'advertica-lite'),
-			'desc' => __('Upload background image for parallax section.', 'advertica-lite'),
-			'id' => $advertica_shortname.'_fullparallax_image',
-			'std' => $imagepath.'Parallax_Section_Image.jpg',
-			'type' => 'upload');
+	// $options[] = array(
+	// 		'name' => __('Parallax Section Background Image (size: width * height (1600x * 1000px) )', 'advertica-lite'),
+	// 		'desc' => __('Upload background image for parallax section.', 'advertica-lite'),
+	// 		'id' => $advertica_shortname.'_fullparallax_image',
+	// 		'std' => $imagepath.'Parallax_Section_Image.jpg',
+	// 		'type' => 'upload');
 
-	$options[] = array(
-			'name' => __('Parallax Section Content', 'advertica-lite'),
-			'desc' => __('Enter content for parallax section','advertica-lite'),
-			'id' => $advertica_shortname.'_para_content_left',
-			'std' => '<div class="skt-awesome-section"> 
-						<div class="skt-awesome-title">Awesome Parallax Section</div><div class="skt-awesome-desp">Advertica features an amazing parallax section</div>
-					  </div>',
-			'type' => 'textarea');
+	// $options[] = array(
+	// 		'name' => __('Parallax Section Content', 'advertica-lite'),
+	// 		'desc' => __('Enter content for parallax section','advertica-lite'),
+	// 		'id' => $advertica_shortname.'_para_content_left',
+	// 		'std' => '<div class="skt-awesome-section"> 
+	// 					<div class="skt-awesome-title">Awesome Parallax Section</div><div class="skt-awesome-desp">Advertica features an amazing parallax section</div>
+	// 				  </div>',
+	// 		'type' => 'textarea');
 
 	//Front Page Options	
 	$options[] = array(
