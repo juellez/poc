@@ -42,10 +42,7 @@ get_header();
 					<!-- skepost --> 
 					</div>
 					<!-- post -->
-					<?php edit_post_link('Edit', '', ''); ?>	
-					<?php if ( comments_open() || get_comments_number() ) {
-						comments_template();
-					} ?>
+					<?php edit_post_link('Edit', '', ''); ?>
 					<?php endwhile; ?>
 					<?php else :  ?>
 						<div class="post">
