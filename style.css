@@ -115,8 +115,8 @@ body.page-template-template-front-page-php #main{margin-top:0 !important;}
 .skehead-headernav.skehead-headernav-shrink  #logo #site-description {  font-size: 11px;margin-top: 2px;}
 #skehead #skenav { margin-top:0px; }
 .bottom-shadow { background: url("images/header_shadow.png") no-repeat scroll 0 0 transparent;  display: block;  height: 25px;  margin-bottom: 15px;  margin-top: -10px;  position: relative;  width: 869px;  }
-.advertica-image-post { position: relative; text-align: center; max-height: 400px; min-width: 100%; overflow: hidden; }
-.advertica-image-post img{ min-width: 100%; }
+.advertica-image-post { position: relative; text-align: center; background-color: #D83B2D; 
+    height: 400px; overflow: hidden; background-position: bottom center; background-repeat: no-repeat; }
 .Skt-header-image {text-align: center;}
 
 /* =Error Messages
@@ -137,7 +137,7 @@ body.page-template-template-front-page-php #main{margin-top:0 !important;}
 #skenav ul .children li:first-child,  #skenav ul .sub-menu li:first-child {  border-top: none;  }
 #skenav ul ul li{  border-top: 1px solid rgba(0,0,0,.15);  }
 #skenav ul ul ul.sub-menu,#skenav ul ul ul.children{  left: 100%;  top: 0px !important; border-top: 0 none;margin-top:0;  }
-#skenav ul ul a {  line-height: 1.2em;  font-size: 13px;  padding: 10px 20px;  width: auto;  height: auto;  color: #FFFFFF;  }
+#skenav ul ul a {  line-height: 1.2em;  font-size: 13px;  padding: 10px 30px 10px 20px;  width: auto;  height: auto;  color: #FFFFFF;  }
 #header.skehead-headernav-shrink #skenav ul ul a {  line-height: 1.2em;  }
 #skenav ul li:hover{  z-index:999999999999;  }
 * html #skenav ul li.current_page_item a, * html #skenav ul li.current-menu-ancestor a, * html #skenav ul li.current-menu-item a, * html #skenav ul li.current-menu-parent a, * html #skenav ul li a:hover {  color: #D8493A;  }
