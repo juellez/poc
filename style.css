@@ -66,8 +66,8 @@ Tags: blue, gray, orange, pink, purple, dark, light, two-columns, right-sidebar,
 
 .clear {clear:both;}
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {background: transparent;border: 0;margin: 0;padding: 0;vertical-align: baseline;}
-body { color: #777777;  font-family: 'OpenSansRegular';  font-size: 12px;  line-height: 22px;font-weight:300;}
-p, dl, hr, h1, h2, h3, h4, h5, h6, ol, ul, pre, table, address, fieldset, figure {font-weight: 300;  margin-bottom: 20px;  line-height: 22px;}
+body { color: #777777;  font-family: 'OpenSansRegular';  font-size: 14px;  line-height: 175%; font-weight:300;}
+p, dl, hr, h1, h2, h3, h4, h5, h6, ol, ul, pre, table, address, fieldset, figure {font-weight: 300;  margin-bottom: 20px;  line-height: 175%;}
 h1, h2, h3, h4, h5, h6{ color: #555555;font-family: 'OpenSansSemiBold';font-weight: normal;letter-spacing: -0.5px;}
 pre {  overflow: auto;  width: 98%;}
 embed {max-width: 100%;}
@@ -135,7 +135,7 @@ body.page-template-template-front-page-php #main{margin-top:0 !important;}
 #skenav ul ul a {  line-height: 1.2em;  font-size: 13px;  padding: 10px 20px;  width: auto;  height: auto;  color: #FFFFFF;  }
 #header.skehead-headernav-shrink #skenav ul ul a {  line-height: 1.2em;  }
 #skenav ul li:hover{  z-index:999999999999;  }
-* html #skenav ul li.current_page_item a, * html #skenav ul li.current-menu-ancestor a, * html #skenav ul li.current-menu-item a, * html #skenav ul li.current-menu-parent a, * html #skenav ul li a:hover {  color: #fff;  }
+* html #skenav ul li.current_page_item a, * html #skenav ul li.current-menu-ancestor a, * html #skenav ul li.current-menu-item a, * html #skenav ul li.current-menu-parent a, * html #skenav ul li a:hover {  color: #D8493A;  }
 
 /* =Content
 -------------------------------------------------------------- */
@@ -175,7 +175,7 @@ body.page-template-template-front-page-php #main{margin-top:0 !important;}
 .skepost-meta {  color: #999; font-size: 11px; margin-bottom: 15px; word-spacing: 2px } 	
 .skepost-meta abbr {  border: none;  }
 .skepost-meta abbr:hover {  border-bottom: 1px dotted #666;  }
-.skepost {clear: both;  }
+.skepost {clear: both; font-size: 16px; line-height: 175%; }
 .skepost img {margin-bottom: 10px;  }
 .skepost input {  margin: 0 0 24px 0;  }
 .skepost input.file, .skepost input.button {  margin-right: 24px;  }
@@ -269,10 +269,12 @@ body.page .edit-link {  clear: both;  display: block;  }
 .skt-awesome-section {text-align: center;}
 .skt-awesome-title {color: #fff;font-family: OpenSansSemibold;font-size: 50px;line-height: 50px;}
 .skt-awesome-desp {font-size: 18px;line-height: 27px;margin-top: 10px;}
-#full-client-box h3 {font-family: 'OpenSansbold';font-size: 18px;font-weight: 300;letter-spacing: 1px;margin: 0 0 10px;padding-top: 0; text-transform: uppercase;}
-#full-client-box .border_left {border-bottom: 1px solid #999999; display: block;margin-bottom: 10px;width: 100px;}
-#full-client-box {margin-bottom: 65px;}
-
+#full-client-box h3, #front-content-box2 h3, #front-content-box3 h3 {font-family: 'OpenSansbold';font-size: 18px;font-weight: 300;letter-spacing: 1px;margin: 0 0 10px;padding-top: 0; text-transform: uppercase;}
+#front-content-box2 h3 { margin: 50px 0px 10px; }
+#full-client-box .border_left, #front-content-box2 .border_left, #front-content-box3 .border_left {border-bottom: 1px solid #999999; display: block;margin-bottom: 10px;width: 100px;}
+.border_center  { border-bottom: 1px solid #222222; display: block; margin: 0 auto 10px; width: 150px; }
+#full-client-box, #front-content-box2, #front-content-box3 {margin-bottom: 65px; }
+#front-content-box2 { color: #222222; }
 
 /* =Comments
 -------------------------------------------------------------- */
@@ -585,6 +587,22 @@ ul.childpages {  list-style-type: disc;  margin-left: 20px;  }
 /* =custom poc styles
 -------------------------------------------------------------- */
 
+#front-content-box { text-align: center; }
+#front-content-box h1 { text-transform: uppercase; color: #d8493a; }
+.content-block { text-align: center; background-color: #f1f1f1; }
+.cta-main { margin-top: 36px; }
+.cta-main hr.double { clear: both; margin: 0; padding: 0; border: none; border-top: medium double #e8e8e8; color: #e8e8e8; text-align: center; }
+.cta-main .btn-pad { background-color: #FFF;
+padding: 0px 10px;
+width: 200px;
+margin: -18px auto; }
+.cta-main button { border: 1px solid #D8493A;
+color: #D8493A;
+background-color: rgb(255, 255, 255);
+font-size: 12px;
+line-height: 30px;
+padding: 0px 20px;
+font-weight: bold; }
 .skt-iconbox .iconbox-icon { display: none; }
 .skt-iconbox .iconbox-content { margin-top: 0; }
 .skt-iconbox .iconbox-content h4 { color: #D8493A; text-transform: uppercase; }
@@ -598,5 +616,3 @@ font-weight: bold;}
 #full-twitter-box {background: #D8493A none repeat scroll 0% 0%;
 color: #fff;
 padding: 0 0 20px 0; }
-#content p { font-size: 16px;
-line-height: 120%; }

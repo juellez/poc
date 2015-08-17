@@ -7,7 +7,8 @@
 * 'pages' on your WordPress site will use a different template.
 *
 */
-get_header(); ?>
+get_header(); 
+?>
 
 <?php global $advertica_shortname; ?>
 

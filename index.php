@@ -10,7 +10,9 @@
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
  */
-get_header(); ?>
+get_header(); 
+die('index');
+?>
 
 <?php global $advertica_shortname; ?>
 <div class="main-wrapper-item">
