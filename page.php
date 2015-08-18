@@ -69,7 +69,7 @@ if ( $childpages ) {
 	<?php if(have_posts()) : ?>
 	<?php while(have_posts()) : the_post(); ?>
 		<div class="bread-title-holder">
-			<div id="full-bg-breadimage-fixed" class="bread-title-bg-image"></div>
+			<div id="full-bg-breadimage-fixed"></div>
 			<span class="img-cover"></span>
 			<div class="container">
 				<div class="row-fluid">
