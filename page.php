@@ -8,6 +8,42 @@
 *
 */
 get_header(); 
+
+// if this page has children, display them here
+$childpages = wp_list_pages( 'sort_column=menu_order&title_li=&child_of=' . $post->ID . '&echo=0' );
+if( $childpages ){
+	$subtitle_id = $post->ID;
+}
+else{
+	if( $post->post_parent ){
+	    $childpages = wp_list_pages( 'sort_column=menu_order&title_li=&child_of=' . $post->post_parent . '&echo=0' );
+		$subtitle_id = $post->post_parent;
+	}
+}
+$post_slug=$post->post_name;
+if( $post_slug == 'news' | $post_slug == 'resources' | $post_slug == 'get-informed' || $post_slug == 'about-the-good-news-club' ){
+	$headtitle = 'Get Informed';
+	$subtitle = 'Stay Informed';
+	$childpages = '';
+	foreach( array('about-the-good-news-club','parents','administrators','resources','news') as $slug ){
+		$subtitle_page = get_page_by_path($slug);
+		$childpages .= '<li class="page_item page-item-'.$subtitle_page->ID.'"><a href="/'.$slug.'">'.$subtitle_page->post_title.'</a></li>';
+	}
+}
+else{
+	if( $post_slug == 'donate' ){
+		$subtitle_page = get_page_by_path('get-involved');
+	    $childpages = wp_list_pages( 'sort_column=menu_order&title_li=&child_of=' . $subtitle_page->ID . '&echo=0' );
+		$subtitle_id = $subtitle_page->ID;
+	}
+}
+if ( $childpages ) {
+	// outpu the title
+	if( empty($subtitle) ) $subtitle = get_post_meta ( $subtitle_id, 'sidebar_title', true );
+	if( empty($headtitle) ) $headtitle = get_post_meta ( $subtitle_id, 'header_title', true );
+	$sidebar = '<h3>' . $subtitle . '</h3>';
+    $sidebar .= '<ul>' . $childpages . '</ul>';
+}
 ?>
 
 <?php global $advertica_shortname; ?>
@@ -21,8 +57,7 @@ get_header();
 			<div class="container">
 				<div class="row-fluid">
 					<div class="container_inner clearfix">
-						<h1 class="title"><?php the_title(); ?></h1>
-
+						<h1 class="title"><?= empty($headtitle) ? get_the_title() : $headtitle; ?></h1>
 						<?php  if(sketch_get_option($advertica_shortname."_hide_bread") == 'true') {
 							if ((class_exists('advertica_breadcrumb_class'))) {$advertica_breadcumb->custom_breadcrumb();}
 						}
@@ -38,6 +73,7 @@ get_header();
 				<div id="content" class="span8">
 					<div class="post clearfix" id="post-<?php the_ID(); ?>">
 						<div class="skepost">
+							<?php if( !empty($headtitle) ): ?><h1><?php the_title(); ?></h1><?php endif; ?>
 							<?php the_content(); ?>
 							<?php wp_link_pages(__('<p><strong>Pages:</strong> ','advertica-lite'), '</p>', __('number','advertica-lite')); ?>
 						</div>
