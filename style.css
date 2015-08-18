@@ -77,7 +77,7 @@ li{margin-left: 30px;}
 dl {margin: 0 0 24px;float: left;}
 dt {font-weight: 400;}
 dd {margin-bottom: 18px;}
-blockquote { border-radius: 2px;font-size: 14px !important; padding:8px 5px 8px 20px;  margin-right: 10px;  margin-bottom: 10px; quotes: none;  font-family: 'open_sansitalic';line-height: 22px;}
+blockquote { border-radius: 2px; padding:8px 5px 8px 20px;  margin-right: 10px;  margin-bottom: 10px; quotes: none;  font-family: 'open_sansitalic'; font-style: oblique; line-height: 22px;}
 cite{font-weight: 400;}
 blockquote cite a{color: #FFFFFF;}
 iframe { max-width: 100%; width:100%;outline: none;border:none;overflow:hidden;border:none;}
@@ -705,6 +705,7 @@ padding: 10px; font-size: 18px; }
     font-weight: bold;
     font-family: 'OpenSansSemibold';    
 }
+.textwidget blockquote { margin-left: 0; padding-left: 0;}
 .widget_text { font-size: 12px; margin-left: 15px;}
 #sidebar_2, #sidebar_2 h3 { color: rgb(162,162,162); margin-left: 15px; }
 #sidebar_2 h3 { font-size: 16px; font-family: 'Sanchez',serif; line-height: 120%; }
