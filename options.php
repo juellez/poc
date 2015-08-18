@@ -381,14 +381,14 @@ function optionsframework_options() {
 		'desc' => __('Enter link for second image.', 'advertica-lite'),
 		'id' => $advertica_shortname.'_img2_link',
 		'std' => '#',
-		'type' => 'textarea');
+		'type' => 'text');
 
 	$options[] = array(
 		'name' => __('Third Image Title', 'advertica-lite'),
 		'desc' => __('Enter title for third image.', 'advertica-lite'),
 		'id' => $advertica_shortname.'_img3_title',
 		'std' => '',
-		'type' => 'html');
+		'type' => 'textarea');
 
 	$options[] = array(
 		'name' => __('Third Image (size: width * height (232px * 101px)', 'advertica-lite'),
