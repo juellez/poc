@@ -724,7 +724,7 @@ padding: 10px; font-size: 18px; }
     position: relative;
     padding: 45px 0 0;
     border-top: 52px solid transparent;
-    margin-top: -50px;
+    margin-top: -90px;
     -webkit-background-clip: padding-box;
     -moz-background-clip: padding;
     background-clip: padding-box;
@@ -736,6 +736,6 @@ padding: 10px; font-size: 18px; }
     top: -45px;
     left: 0;
     right: 0;
-    border-top: 1px solid #F1F1F1;
+    border-top: 1px solid transparent;
 }
 
