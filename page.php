@@ -91,6 +91,8 @@ if ( $childpages ) {
 				</div>
 				<!-- content -->
 
+				<div class="span1">&nbsp;</div>
+
 				<!-- Sidebar -->
 				<div id="sidebar" class="span3">
 					<?php get_sidebar('page'); ?>

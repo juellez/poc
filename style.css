@@ -101,7 +101,7 @@ body.front-page { background-color: #fff; }
 /* =Header
 -------------------------------------------------------------- */
 body.page-template-template-front-page-php #main{margin-top:0 !important;}
-#header { padding: 0;  position: relative;   z-index: 9999; box-shadow: 3px 0 2px rgba(0, 0, 0, 0.5);background: #fff;}
+#header { padding: 0;  position: relative;   z-index: 9999; box-shadow: 1px 1px 1px rgba(180, 180, 180, 0.15); background: #fff;}
 .skehead-headernav{ left: 0;top: 0;width: 100%;z-index: 200;}
 #header.skehead-headernav.skehead-headernav-shrink{position:fixed;-moz-box-sizing: border-box;box-sizing: border-box;}
 #logo {transition: height 0.3s ease 0s, line-height 0.3s ease 0s; margin-top: 5px;  margin-bottom: 5px;position: relative;max-height: 62px;}
@@ -224,9 +224,9 @@ body.page .edit-link {  clear: both;  display: block;  }
     background-color: #fff;
     padding: 80px 0;
     margin: 0;
-    -webkit-box-shadow: 0px -2px 15px rgba(10, 10, 10, 0.25);
-    -moz-box-shadow:    0px -2px 15px rgba(10, 10, 10, 0.25);
-    box-shadow:         0px -2px 15px rgba(10, 10, 10, 0.25);
+    -webkit-box-shadow: 0px -2px 15px rgba(180, 180, 180, 0.15);
+    -moz-box-shadow:    0px -2px 15px rgba(180, 180, 180, 0.15);
+    box-shadow:         0px -2px 15px rgba(180, 180, 180, 0.15);
 }
 .front-page #featured-box{
     margin-top:75px;
@@ -268,18 +268,17 @@ body.page .edit-link {  clear: both;  display: block;  }
 .full-content-box .span5 > h2 {line-height: 28px;}
 .full-bg-image-fixed{background-image: url("images/PArallax_Vimeo_bg.jpg"); }
 .bread-title-holder h1.title {    
-    font-family: "Sanchez", sans-serif;
     font-size: 44px;
     line-height: 30px;
     font-weight: bold;
     position: absolute;
     margin: 0;
-    bottom: 22px;     letter-spacing: 2px;
+    bottom: 22px;     letter-spacing: 2px; text-transform: uppercase;
 }
 .bread-title-holder .cont_nav_inner a,.bread-title-holder .cont_nav_inner p{font-size:12px;}
 .bread-title-holder .skt-breadcrumbs-separator { color: #666666;font-family: 'Trebuchet MS';font-size: 10px;letter-spacing: -1px;margin: 0 3px;position: relative;}
 .full-bg-breadimage-fixed{ background-attachment: fixed; background-repeat: repeat;background-size: cover;-webkit-background-size: cover;
--moz-background-size: cover; bottom: 0; height: 100%; left: 0;overflow: hidden;position: absolute; width: 100%;  box-shadow: 0 -2px 3px -1px rgba(0, 0, 0, 0.06) inset;}
+-moz-background-size: cover; bottom: 0; height: 100%; left: 0;overflow: hidden;position: absolute; width: 100%; drop-shadow:none;}
 .full-bg-breadimage-fixed{ background-size: auto auto;}
 #full-division-box,#full-static-box{ background-attachment: fixed; background-repeat: repeat; background-size: cover; -webkit-background-size: cover; -moz-background-size: cover; height: 100%;overflow: hidden;width: 100%;  box-shadow: 0 -2px 3px -1px rgba(0, 0, 0, 0.06) inset; } 
 #full-static-box {box-shadow:none;background-position:center;}
