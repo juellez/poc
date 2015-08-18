@@ -111,7 +111,7 @@ function optionsframework_options() {
 			'name' => __('Logo ALT Text', 'advertica-lite'),
 			'desc' => __('Enter logo image alt attribute text.', 'advertica-lite'),
 			'id' => $advertica_shortname.'_logo_alt',
-			'std' => 'sketch themes',
+			'std' => 'Protect Oregon Children',
 			'type' => 'text');
 
 	$options[] = array(
@@ -335,116 +335,213 @@ function optionsframework_options() {
 		'type' => 'heading');
 
 	$options[] = array(
-			'name' => __('Client Section Title', 'advertica-lite'),
-			'desc' => __('Enter title for client section.', 'advertica-lite'),
-			'id' => $advertica_shortname.'_clientsec_title',
-			'std' => 'Our Partners',
-			'type' => 'text');
+		'name' => __('Home Get Informed Section Title', 'advertica-lite'),
+		'desc' => __('Enter title for this section.', 'advertica-lite'),
+		'id' => $advertica_shortname.'_clientsec_title',
+		'std' => 'Get Informed',
+		'type' => 'text');
 
 	$options[] = array(
-			'name' => __('First Client Logo Title', 'advertica-lite'),
-			'desc' => __('Enter title for first client logo image.', 'advertica-lite'),
-			'id' => $advertica_shortname.'_img1_title',
-			'std' => '',
-			'type' => 'text');
+		'name' => __('First Image Title', 'advertica-lite'),
+		'desc' => __('Enter title for first image.', 'advertica-lite'),
+		'id' => $advertica_shortname.'_img1_title',
+		'std' => '',
+		'type' => 'textarea');
 
 	$options[] = array(
-		'name' => __('First Client Logo Image (size: width * height (232px * 101px)', 'advertica-lite'),
-		'desc' => __('Upload image for first client logo.', 'advertica-lite'),
+		'name' => __('First Image (size: width * height (232px * 101px)', 'advertica-lite'),
+		'desc' => __('Upload image for first image.', 'advertica-lite'),
 		'id' => $advertica_shortname.'_img1_icon',
-		'std' => $imagepath.'clients-logo/defdault-client-logo.png',
+		'std' => '',
 		'type' => 'upload');
 
 	$options[] = array(
-		'name' => __('First Client Logo Image Link', 'advertica-lite'),
-		'desc' => __('Enter link for first client logo image.', 'advertica-lite'),
+		'name' => __('First Image Link', 'advertica-lite'),
+		'desc' => __('Enter link for first image.', 'advertica-lite'),
 		'id' => $advertica_shortname.'_img1_link',
 		'std' => '#',
 		'type' => 'text');
 
 	$options[] = array(
-		'name' => __('Second Client Logo Title', 'advertica-lite'),
-		'desc' => __('Enter title for second client logo image.', 'advertica-lite'),
+		'name' => __('Second Image Title', 'advertica-lite'),
+		'desc' => __('Enter title for second image.', 'advertica-lite'),
 		'id' => $advertica_shortname.'_img2_title',
 		'std' => '',
-		'type' => 'text');
+		'type' => 'textarea');
 
 	$options[] = array(
-		'name' => __('Second Client Logo Image (size: width * height (232px * 101px)', 'advertica-lite'),
-		'desc' => __('Upload image for second client logo.', 'advertica-lite'),
+		'name' => __('Second Image (size: width * height (232px * 101px)', 'advertica-lite'),
+		'desc' => __('Upload image for second image.', 'advertica-lite'),
 		'id' => $advertica_shortname.'_img2_icon',
-		'std' => $imagepath.'clients-logo/defdault-client-logo.png',
+		'std' => '',
 		'type' => 'upload');
 
 	$options[] = array(
-		'name' => __('Second Client Logo Image Link', 'advertica-lite'),
-		'desc' => __('Enter link for second client logo image.', 'advertica-lite'),
+		'name' => __('Second Image Link', 'advertica-lite'),
+		'desc' => __('Enter link for second image.', 'advertica-lite'),
 		'id' => $advertica_shortname.'_img2_link',
 		'std' => '#',
-		'type' => 'text');
+		'type' => 'textarea');
 
 	$options[] = array(
-		'name' => __('Third Client Logo Title', 'advertica-lite'),
-		'desc' => __('Enter title for third client logo image.', 'advertica-lite'),
+		'name' => __('Third Image Title', 'advertica-lite'),
+		'desc' => __('Enter title for third image.', 'advertica-lite'),
 		'id' => $advertica_shortname.'_img3_title',
 		'std' => '',
-		'type' => 'text');
+		'type' => 'html');
 
 	$options[] = array(
-		'name' => __('Third Client Logo Image (size: width * height (232px * 101px)', 'advertica-lite'),
-		'desc' => __('Upload image for third client logo.', 'advertica-lite'),
+		'name' => __('Third Image (size: width * height (232px * 101px)', 'advertica-lite'),
+		'desc' => __('Upload image for third image.', 'advertica-lite'),
 		'id' => $advertica_shortname.'_img3_icon',
-		'std' => $imagepath.'clients-logo/defdault-client-logo.png',
+		'std' => '',
 		'type' => 'upload');
 
 	$options[] = array(
-		'name' => __('Third Client Logo Image Link', 'advertica-lite'),
-		'desc' => __('Enter link for third client logo image.', 'advertica-lite'),
+		'name' => __('Third Image Link', 'advertica-lite'),
+		'desc' => __('Enter link for third image.', 'advertica-lite'),
 		'id' => $advertica_shortname.'_img3_link',
 		'std' => '#',
 		'type' => 'text');
 
 	$options[] = array(
-		'name' => __('Fourth Client Logo Title', 'advertica-lite'),
-		'desc' => __('Enter title for fourth client logo image.', 'advertica-lite'),
+		'name' => __('Fourth Image Title', 'advertica-lite'),
+		'desc' => __('Enter title for fourth image.', 'advertica-lite'),
 		'id' => $advertica_shortname.'_img4_title',
 		'std' => '',
-		'type' => 'text');
+		'type' => 'textarea');
 
 	$options[] = array(
-		'name' => __('Fourth Client Logo Image (size: width * height (232px * 101px)', 'advertica-lite'),
-		'desc' => __('Upload image for fourth client logo.', 'advertica-lite'),
+		'name' => __('Fourth Image (size: width * height (232px * 101px)', 'advertica-lite'),
+		'desc' => __('Upload image for fourth image.', 'advertica-lite'),
 		'id' => $advertica_shortname.'_img4_icon',
-		'std' => $imagepath.'clients-logo/defdault-client-logo.png',
+		'std' => '',
 		'type' => 'upload');
 
 	$options[] = array(
-		'name' => __('Fourth Client Logo Image Link', 'advertica-lite'),
-		'desc' => __('Enter link for fourth client logo image.', 'advertica-lite'),
+		'name' => __('Fourth Image Link', 'advertica-lite'),
+		'desc' => __('Enter link for fourth image.', 'advertica-lite'),
 		'id' => $advertica_shortname.'_img4_link',
 		'std' => '#',
 		'type' => 'text');
 
+	// $options[] = array(
+	// 	'name' => __('Fifth Image Title', 'advertica-lite'),
+	// 	'desc' => __('Enter title for fifth client logo image.', 'advertica-lite'),
+	// 	'id' => $advertica_shortname.'_img5_title',
+	// 	'std' => '',
+	// 	'type' => 'text');
+
+	// $options[] = array(
+	// 	'name' => __('Fifth Client Logo Image (size: width * height (232px * 101px)', 'advertica-lite'),
+	// 	'desc' => __('Upload image for fifth client logo.', 'advertica-lite'),
+	// 	'id' => $advertica_shortname.'_img5_icon',
+	// 	'std' => $imagepath.'clients-logo/defdault-client-logo.png',
+	// 	'type' => 'upload');
+
+	// $options[] = array(
+	// 	'name' => __('Fifth Client Logo Image Link', 'advertica-lite'),
+	// 	'desc' => __('Enter link for fifth client logo image.', 'advertica-lite'),
+	// 	'id' => $advertica_shortname.'_img5_link',
+	// 	'std' => '#',
+	// 	'type' => 'text');
+
+	//Front Page Options	
 	$options[] = array(
-		'name' => __('Fifth Client Logo Title', 'advertica-lite'),
-		'desc' => __('Enter title for fifth client logo image.', 'advertica-lite'),
-		'id' => $advertica_shortname.'_img5_title',
-		'std' => '',
+		'name' => __('Home Get Involved Section', 'advertica-lite'),
+		'type' => 'heading');
+
+	$options[] = array(
+		'name' => __('Home Get Involved Section Title', 'advertica-lite'),
+		'desc' => __('Enter title for this section.', 'advertica-lite'),
+		'id' => $advertica_shortname.'_hp2_title',
+		'std' => 'Get Involved',
 		'type' => 'text');
 
 	$options[] = array(
-		'name' => __('Fifth Client Logo Image (size: width * height (232px * 101px)', 'advertica-lite'),
-		'desc' => __('Upload image for fifth client logo.', 'advertica-lite'),
-		'id' => $advertica_shortname.'_img5_icon',
-		'std' => $imagepath.'clients-logo/defdault-client-logo.png',
+		'name' => __('First Image Title', 'advertica-lite'),
+		'desc' => __('Enter title for first image.', 'advertica-lite'),
+		'id' => $advertica_shortname.'_hp2_img1_title',
+		'std' => '',
+		'type' => 'textarea');
+
+	$options[] = array(
+		'name' => __('First Image (size: width * height (232px * 101px)', 'advertica-lite'),
+		'desc' => __('Upload image for first image.', 'advertica-lite'),
+		'id' => $advertica_shortname.'_hp2_img1_icon',
+		'std' => '',
 		'type' => 'upload');
 
 	$options[] = array(
-		'name' => __('Fifth Client Logo Image Link', 'advertica-lite'),
-		'desc' => __('Enter link for fifth client logo image.', 'advertica-lite'),
-		'id' => $advertica_shortname.'_img5_link',
+		'name' => __('First Image Link', 'advertica-lite'),
+		'desc' => __('Enter link for first image.', 'advertica-lite'),
+		'id' => $advertica_shortname.'_hp2_img1_link',
 		'std' => '#',
 		'type' => 'text');
+
+	$options[] = array(
+		'name' => __('Second Image Title', 'advertica-lite'),
+		'desc' => __('Enter title for second image.', 'advertica-lite'),
+		'id' => $advertica_shortname.'_hp2_img2_title',
+		'std' => '',
+		'type' => 'textarea');
+
+	$options[] = array(
+		'name' => __('Second Image (size: width * height (232px * 101px)', 'advertica-lite'),
+		'desc' => __('Upload image for second image.', 'advertica-lite'),
+		'id' => $advertica_shortname.'_hp2_img2_icon',
+		'std' => '',
+		'type' => 'upload');
+
+	$options[] = array(
+		'name' => __('Second Image Link', 'advertica-lite'),
+		'desc' => __('Enter link for second image.', 'advertica-lite'),
+		'id' => $advertica_shortname.'_hp2_img2_link',
+		'std' => '#',
+		'type' => 'text');
+
+	$options[] = array(
+		'name' => __('Third Image Title', 'advertica-lite'),
+		'desc' => __('Enter title for third image.', 'advertica-lite'),
+		'id' => $advertica_shortname.'_hp2_img3_title',
+		'std' => '',
+		'type' => 'textarea');
+
+	$options[] = array(
+		'name' => __('Third Image (size: width * height (232px * 101px)', 'advertica-lite'),
+		'desc' => __('Upload image for third image.', 'advertica-lite'),
+		'id' => $advertica_shortname.'_hp2_img3_icon',
+		'std' => '',
+		'type' => 'upload');
+
+	$options[] = array(
+		'name' => __('Third Image Link', 'advertica-lite'),
+		'desc' => __('Enter link for third image.', 'advertica-lite'),
+		'id' => $advertica_shortname.'_hp2_img3_link',
+		'std' => '#',
+		'type' => 'text');
+
+	$options[] = array(
+		'name' => __('Fourth Image Title', 'advertica-lite'),
+		'desc' => __('Enter title for fourth image.', 'advertica-lite'),
+		'id' => $advertica_shortname.'_hp2_img4_title',
+		'std' => '',
+		'type' => 'textarea');
+
+	$options[] = array(
+		'name' => __('Fourth Image (size: width * height (232px * 101px)', 'advertica-lite'),
+		'desc' => __('Upload image for fourth image.', 'advertica-lite'),
+		'id' => $advertica_shortname.'_hp2_img4_icon',
+		'std' => '',
+		'type' => 'upload');
+
+	$options[] = array(
+		'name' => __('Fourth Image Link', 'advertica-lite'),
+		'desc' => __('Enter link for fourth image.', 'advertica-lite'),
+		'id' => $advertica_shortname.'_hp2_img4_link',
+		'std' => '#',
+		'type' => 'text');
+
 
 	//Footer	
 

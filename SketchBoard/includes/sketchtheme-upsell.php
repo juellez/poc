@@ -24,7 +24,7 @@ function advertica_add_upsell() {
     add_action( 'admin_print_styles-' . $page, 'advertica_sell_style' );
 }
 
-add_action( 'admin_menu', 'advertica_add_upsell',12 );
+// add_action( 'admin_menu', 'advertica_add_upsell',12 );
 
 // Define markup for the upsell page.
 function advertica_display_upsell() {
