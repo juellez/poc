@@ -284,17 +284,17 @@ body.page .edit-link {  clear: both;  display: block;  }
 #full-division-box,#full-static-box{ background-attachment: fixed; background-repeat: repeat; background-size: cover; -webkit-background-size: cover; -moz-background-size: cover; height: 100%;overflow: hidden;width: 100%;  box-shadow: 0 -2px 3px -1px rgba(0, 0, 0, 0.06) inset; } 
 #full-static-box {box-shadow:none;background-position:center;}
 
-.row-fluid .clients-items .span2 { margin-left: 0; width: 20%;  }
-.clients-items li a  img{ border: 1px solid #E1E1E1;border-right: medium none; display: block; position: relative; transition: all 0.8s ease 0s;  	-webkit-transition: all 0.8s ease 0s;  	-moz-transition: all 0.8s ease 0s;  	-o-transition: all 0.8s ease 0s;  }
-.clients-items li:last-child a { border-right: 1px solid #E1E1E1;  }
-.clients-items img { bottom: 0;margin: auto; opacity: 0.5;position: absolute; top: 0;transition: all 0.8s ease 0s;-webkit-transition: all 0.8s ease 0s; -moz-transition: all 0.8s ease 0s;  	-o-transition: all 0.8s ease 0s;  }
-.clients-items li:hover img{opacity: 1;transition: all 0.8s ease 0s;-webkit-transition: all 0.8s ease 0s;-moz-transition: all 0.8s ease 0s;-o-transition: all 0.8s ease 0s;}
-.clients-items li a:hover { border-bottom: 1px solid #F54336; opacity: 1;transition: all 0.8s ease 0s;-webkit-transition: all 0.8s ease 0s; -moz-transition: all 0.8s ease 0s;-o-transition: all 0.8s ease 0s;  }
+.row-fluid .clients-items .span3 { margin-left: 0; }
+.clients-items li a img{ display: block; position: relative; transition: all 0.8s ease 0s;  	-webkit-transition: all 0.8s ease 0s;  	-moz-transition: all 0.8s ease 0s;  	-o-transition: all 0.8s ease 0s;  }
+.clients-items img { max-height: 300px;
+    width: auto; border: 1px solid #e8e8e8; bottom: 0;margin: auto; opacity: 1;position: absolute; top: 0;transition: all 0.8s ease 0s;-webkit-transition: all 0.8s ease 0s; -moz-transition: all 0.8s ease 0s;  	-o-transition: all 0.8s ease 0s;  }
+.clients-items li:hover img{ opacity: 0.5; transition: all 0.8s ease 0s;-webkit-transition: all 0.8s ease 0s;-moz-transition: all 0.8s ease 0s;-o-transition: all 0.8s ease 0s;}
+.clients-items li a:hover { border-bottom: 1px solid #F54336; opacity: 0.5;transition: all 0.8s ease 0s;-webkit-transition: all 0.8s ease 0s; -moz-transition: all 0.8s ease 0s;-o-transition: all 0.8s ease 0s;  }
 .clients-items {margin-top:40px;margin-bottom: 0;}
 .clients-items h4 {text-align: center;
 margin: 10px 25px;
 font-weight: bold;
-color: #5E5E5E; line-height: 150%; }
+color: #6D6D6D; line-height: 130%; }
 .para_btn{ border: 1px solid #FFFFFF; color: #FFFFFF; display: inline-block; font-family: 'OpenSansBold'; font-size: 12px; letter-spacing: 2px; line-height: 21px; margin-top: 35px; padding: 8px 17px; text-transform: uppercase;transition: all 0.8s ease 0s;-webkit-transition: all 0.8s ease 0s; -moz-transition: all 0.8s ease 0s; -o-transition: all 0.8s ease 0s; } 	
 .para_btn:hover { background: none repeat scroll 0 0 #FFFFFF;transition: all 0.8s ease 0s;-webkit-transition: all 0.8s ease 0s;  	-moz-transition: all 0.8s ease 0s;  	-o-transition: all 0.8s ease 0s;  color:#FFA500;}
 .skt-awesome-section {text-align: center;}
@@ -302,7 +302,7 @@ color: #5E5E5E; line-height: 150%; }
 .skt-awesome-desp {font-size: 18px;line-height: 27px;margin-top: 10px;}
 #full-client-box h3, #front-content-box2 h3, #front-content-box3 h3 {font-family: 'OpenSansbold';font-size: 18px;font-weight: 300;letter-spacing: 1px;margin: 0 0 10px;padding-top: 0; text-transform: uppercase;}
 #front-content-box2 h3 { margin: 50px 0px 10px; line-height: 120%; }
-#full-client-box .border_left, #front-content-box2 .border_left, #front-content-box3 .border_left {border-bottom: 1px solid #999999; display: block;margin-bottom: 10px;width: 100px;}
+#full-client-box .border_left, #front-content-box2 .border_left, #front-content-box3 .border_left {border-bottom: 1px solid #e8e8e8; display: block;margin-bottom: 10px;width: 100px;}
 .border_center  { border-bottom: 1px solid #222222; display: block; margin: 0 auto 30px; width: 150px; }
 #full-client-box, #front-content-box2, #front-content-box3 {margin-bottom: 65px; }
 #front-content-box2 { color: #222222; padding-bottom: 50px; }
