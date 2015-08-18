@@ -266,7 +266,6 @@ body.page .edit-link {  clear: both;  display: block;  }
 .bread-title-holder{   overflow: hidden;position: relative;} 
 .full-content-box{ padding: 60px 0 50px;position: relative; }
 .full-content-box .span5 > h2 {line-height: 28px;}
-.full-bg-image-fixed{background-image: url("images/PArallax_Vimeo_bg.jpg"); }
 .bread-title-holder h1.title {    
     font-size: 44px;
     line-height: 30px;
@@ -278,17 +277,15 @@ body.page .edit-link {  clear: both;  display: block;  }
 .bread-title-holder .cont_nav_inner a,.bread-title-holder .cont_nav_inner p{font-size:12px;}
 .bread-title-holder .skt-breadcrumbs-separator { color: #666666;font-family: 'Trebuchet MS';font-size: 10px;letter-spacing: -1px;margin: 0 3px;position: relative;}
 #full-bg-breadimage-fixed{ 
-    background-attachment: fixed;
-    background-repeat: no-repeat; 
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover; 
-    bottom: 0; height: 100%; 
-    left: 0;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 0;
+    bottom: 0;
+    height: 250px;
     overflow: hidden;
-    position: absolute; 
-    width: 100%; 
-    background-position: bottom center;
+    position: absolute;
+    width: 100%;
+    background-size: cover;
 }
 #full-division-box,#full-static-box{ background-attachment: fixed; background-repeat: repeat; background-size: cover; -webkit-background-size: cover; -moz-background-size: cover; height: 100%;overflow: hidden;width: 100%;  box-shadow: 0 -2px 3px -1px rgba(0, 0, 0, 0.06) inset; } 
 #full-static-box {box-shadow:none;background-position:center;}

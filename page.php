@@ -56,12 +56,12 @@ if ( $childpages ) {
 }
 </style>
 <script>
-// jQuery(document).ready(function () {
-// 	jQuery(window).scroll(function() {
-// 	  var scrolledY = jQuery(window).scrollTop();
-// 	  jQuery('#full-bg-breadimage-fixed').css('background-position-y', ((scrolledY)-150) + 'px');
-// 	});
-// });
+jQuery(document).ready(function () {
+	jQuery(window).scroll(function() {
+	    var x = jQuery(window).scrollTop();
+	    jQuery('#full-bg-breadimage-fixed').css('background-position', 'center ' + parseInt(x / 10) + 'px');
+	});
+});
 </script>
 <?php global $advertica_shortname; ?>
 

@@ -53,10 +53,7 @@
 	<?php if(sketch_get_option($advertica_shortname.'_bread_stype')){ $bread_type = sketch_get_option($advertica_shortname.'_bread_stype'); } 
 	
 	if(isset($bread_type)) {
-	if ($bread_type == "brcolor" && $pagetitlebg == Null ) {?>
-		#full-bg-breadimage-fixed { background-color: <?php echo $breadcolor; ?>;
-	}<?php  } 
-	else { ?> 
+	if ( !empty($pagetitlebg) ) {?>
 		#full-bg-breadimage-fixed { background-image: url("<?php if(isset($pagetitlebg) && $pagetitlebg!= Null ){ echo $pagetitlebg;} ?>");} <?php }
 	?>
 	<?php if($bread_type == "brimage") { ?>.full-bg-breadimage-fixed { background-image: url("<?php if(isset($pagetitlebg) && $pagetitlebg!= Null ){ echo $pagetitlebg;} else { echo $breadimage; } ?>");}<?php } } ?>
