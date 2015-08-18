@@ -56,7 +56,7 @@ if($tweetfeedmeta == '1' || true){ ?>
 					<br />
 					<a href="/get-involved/concerned-citizens">Concerned Citizens</a>
 					<br />
-					<a href="/get-involed">Join Us</a>
+					<a href="/get-involved">Join Us</a>
 					<br />
 					<a href="/donate">Donate</a>
 					<br />
