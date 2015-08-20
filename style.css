@@ -636,7 +636,7 @@ ul.childpages {  list-style-type: disc;  margin-left: 20px;  }
 .aligncenter {display: block;  margin: 5px auto;}
 .alignnone.size-full {max-width: 100%;}
 #content .alignright {float: right;margin: 5px 0px 20px 20px;}
-#content .alignleft {float: left;margin: 5px 20px 20px 0;}
+#content .alignleft {float: left;margin: 5px 30px 15px 0;}
 #content .aligncenter {display: block;  margin: 5px auto;}
 #content .alignnone.size-full {max-width: 100%;}
 
