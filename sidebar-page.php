@@ -26,7 +26,7 @@ global $advertica_shortname;
 		<?php endif; // end not on donate page ?>
 		-->
 		<?php
-			$i = rand(0,4);
+			$i = rand(1,4);
 			if(sketch_get_option($advertica_shortname.'_img'.$i.'_icon')): ?>
 			<div class="hpblock"><a href="<?= empty( sketch_get_option($advertica_shortname.'_img'.$i.'_link') ) ? '#' : esc_url(sketch_get_option($advertica_shortname.'_img'.$i.'_link','advertica-lite')); ?>" title="<?= empty(sketch_get_option($advertica_shortname.'_img'.$i.'_title')) ? '' : sketch_get_option($advertica_shortname.'_img'.$i.'_title','advertica-lite'); ?>"><img alt="client-logo" src="<?= empty(sketch_get_option($advertica_shortname.'_img'.$i.'_icon')) ? '' : sketch_get_option($advertica_shortname.'_img'.$i.'_icon','advertica-lite'); ?>"><h4><?= empty(sketch_get_option($advertica_shortname.'_img'.$i.'_title')) ? '' : sketch_get_option($advertica_shortname.'_img'.$i.'_title','advertica-lite'); ?></h4></a></div>
 		<?php endif; ?>
