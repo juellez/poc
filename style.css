@@ -245,6 +245,7 @@ body.page .edit-link {  clear: both;  display: block;  }
     font-weight: bold;
     margin: 0;
     text-transform: uppercase;
+    font-family: 'OpenSansbold',sans-serif;
 }
 .bread-title-holder .cont_nav_inner a,.bread-title-holder .cont_nav_inner p{font-size:12px;}
 .bread-title-holder .skt-breadcrumbs-separator { color: #666666;font-family: 'Trebuchet MS';font-size: 10px;letter-spacing: -1px;margin: 0 3px;position: relative;}

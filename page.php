@@ -83,7 +83,7 @@ jQuery(document).ready(function () {
 	});
 	// jQuery("h1.title").fitText(<?=$s ?>, { minFontSize: '20px' } );
 	var w = jQuery('#banner-title').width();
-	textFit(document.getElementById('banner-title'), {alignVert: true, widthOnly: true, minFontSize: 18, maxFontSize: 43});
+	textFit(document.getElementById('banner-title'), {alignVert: true, alignHoriz: true, widthOnly: true, minFontSize: 18, maxFontSize: 43});
 });
 </script>
 <?php global $advertica_shortname; ?>
