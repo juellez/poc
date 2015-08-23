@@ -242,7 +242,7 @@ body.page .edit-link {  clear: both;  display: block;  }
 }
 .skt-section{margin-top:65px;}
 .skt-iconbox.iconbox-top {text-align: center;}
-.skt-iconbox.iconbox-top p{margin:0;}
+.skt-iconbox.iconbox-top p{margin: 0 1em;}
 .skt-iconbox.iconbox-top .iconbox-icon {height: auto;position: relative;text-align:center; }
 .iconbox-content { line-height: 22px; margin-top: 45px; }
 .skt-animated.skt-viewport.small-to-large{ animation:skt_zoom 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s normal none 1; -webkit-animation:skt_zoom 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s normal none 1; -moz-animation:skt_zoom 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s normal none 1;-o-animation:skt_zoom 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s normal none 1; opacity:1; }
@@ -713,9 +713,9 @@ padding: 0 0 20px 0; }
 .sprite-twitter { background-position: -100px 0px; }
 
 .full-banner { height: 210px; text-align: center; position: relative; background-image: url(/images/poc-home-bannerbkg.jpg); background-attachment: cover; }
-.full-banner h2 { color: #fff; margin: 0 20px; z-index: 2; padding-top: 75px;
-font-size: 38px; font-family: 'OpenSansbold',sans-serif;
-text-transform: uppercase; line-height: 100%; letter-spacing: 1px; }
+.full-banner h2 { color: #fff; margin: 0 20px; z-index: 2; padding-top: 90px;
+font-size: 42px; font-family: 'OpenSansbold',sans-serif;
+padding-left: 1em; text-transform: uppercase; line-height: 100%; letter-spacing: 1px; }
 
 .poc-image-hdr { color: #FFF;
 text-transform: uppercase;
@@ -739,7 +739,7 @@ line-height: 100%; letter-spacing: 2px; }
 }
 .poc-image-subhdr div { 
     background-color: #fff;
-    width: 60%;
+    width: 55%;
     /* text-transform: uppercase; */
     margin: 0 auto;
     padding: 10px;
@@ -802,7 +802,7 @@ line-height: 100%; letter-spacing: 2px; }
      -webkit-transition: all 0.8s ease 0s;   
      -moz-transition: all 0.8s ease 0s;      
      -o-transition: all 0.8s ease 0s;
-     max-height: 300px;
+     max-height: 200px;
      width: auto; 
      max-width: 100%;
      border: 1px solid #e8e8e8; 
