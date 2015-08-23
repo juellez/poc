@@ -54,6 +54,9 @@ if (has_post_thumbnail( $post->ID ) ){
 	$bgphoto = $image[0];
 }
 $headtitle = get_the_title();
+if( stristr($headtitle, ' and ') ){
+	$headtitle = str_replace(' and ', ' <span class="amp">&amp;</span> ', $headtitle);
+}
 $headbkg = get_post_meta ( $post->ID, 'header_bkg', true );
 // for our dynamic header sizing
 if( strlen($headtitle > 30) ) $s = 3.8;

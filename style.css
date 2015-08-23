@@ -847,3 +847,8 @@ line-height: 100%; letter-spacing: 2px; }
     color: #6D6D6D; line-height: 130%; 
 }
 
+.amp {
+    font-family: Baskerville,'Goudy Old Style',Palatino,'Book Antiqua',serif;
+    font-style: italic;
+    font-weight: lighter;
+}
