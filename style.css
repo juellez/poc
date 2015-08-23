@@ -228,7 +228,7 @@ body.page .edit-link {  clear: both;  display: block;  }
 
 /* = page title css
 -------------------------------------------------------------- */
-.bread-title-holder{ background-color: #F8F8F8;display: block;height: 180px; position: relative; width: 100%;  }
+.bread-title-holder{ display: block;height: 180px; position: relative; width: 100%;  }
 .bread-title-holder .container { display: table;height: 180px; position: relative;
     background-repeat: no-repeat;
     background-position-x: center;
@@ -253,7 +253,7 @@ body.page .edit-link {  clear: both;  display: block;  }
     background-position-x: center;
     background-position-y: 0;
     bottom: 0;
-    height: 250px;
+    height: 200px;
     overflow: hidden;
     position: absolute;
     width: 100%;

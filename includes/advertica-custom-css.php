@@ -62,7 +62,7 @@
 	.bread-title-holder h1.title,.cont_nav_inner span,.bread-title-holder .cont_nav_inner p,.bread-title-holder .cont_nav_inner a{
 		color: #fff;
 	}
-	.img-cover{ background-color: rgba(45,198,216,.8); position: absolute; top: 0; left: 0; right: 0; bottom: 0;}
+	.img-cover{ background-color: transparent; position: absolute; top: 0; left: 0; right: 0; bottom: 0;}
 	
 	/***************** PAGINATE *****************/
 	#skenav li a:hover,#skenav .sfHover { background-color:#333333;color: #FFFFFF;}
