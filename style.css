@@ -692,7 +692,7 @@ ul.childpages {  list-style-type: disc;  margin-left: 20px;  }
 
 .content-block { text-align: center; background-color: #f1f1f1; }
 .cta-main { margin-top: 36px; }
-.cta-main hr.double { clear: both; margin: 0; padding: 0; border: none; border-top: medium double #e8e8e8; color: #e8e8e8; text-align: center; }
+.cta-main hr.double, #content hr.double { clear: both; margin: 0; padding: 0; border: none; border-top: medium double #e8e8e8; color: #e8e8e8; text-align: center; }
 .cta-main .btn-pad { background-color: #FFF;
 padding: 0px 10px;
 width: 200px;
@@ -853,3 +853,9 @@ line-height: 100%; letter-spacing: 2px; }
     font-style: italic;
     font-weight: lighter;
 }
+#content table, #content table tr, #content table th, #content table td { border: none; }
+#content table td.hilite {     color: #2fc6d8;
+    font-size: 2em;
+    font-family: OpenSansbold;
+    letter-spacing: 1px; }
+#content table th { text-transform: uppercase; }
