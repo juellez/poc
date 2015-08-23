@@ -66,7 +66,7 @@ else $s = 2.6;
 <style>
 /* .bread-title-holder .container { */
 #full-bg-breadimage-fixed {
-	background-image: url('<?= empty($bgphoto) ? '/images/bwphoto-kids.jpg' : $bgphoto ?>');
+	background-image: url('<?= empty($bgphoto) ? '/images/kids-blue-banner.jpg' : $bgphoto ?>');
 }
 <?php if( !empty($headbkg) ): ?>
 .img-cover{
