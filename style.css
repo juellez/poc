@@ -200,7 +200,7 @@ body.page-template-template-front-page-php #main{margin-top:0 !important;}
 #content .skepost h2 {     line-height: 140%;
     font-size: 22px;
     margin-bottom: 10px; }
-#content .skepost h3 { margin: 0 0 5px; }
+#content .skepost h3 { margin: 0 0 5px; font-size: 18px; }
 #content .skepost, #content .skepost p {     font-size: 14px;
     line-height: 20px;
     margin: 0 0 10px 0; } 
