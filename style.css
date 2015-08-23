@@ -229,7 +229,7 @@ body.page .edit-link {  clear: both;  display: block;  }
 /* = page title css
 -------------------------------------------------------------- */
 .bread-title-holder{ background-color: #F8F8F8;display: block;height: 180px; position: relative; width: 100%;  }
-.bread-title-holder .container { display: table;height: 100%; position: relative;
+.bread-title-holder .container { display: table;height: 180px; position: relative;
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: 0;
@@ -240,9 +240,8 @@ body.page .edit-link {  clear: both;  display: block;  }
 .bread-title-holder .cont_nav_inner p{margin:0;color:#fff;}
 
 .bread-title-holder h1.title {    
-    font-size: 1.8vw;
     color: #fff;
-    line-height: 120%;
+    line-height: 140%;
     font-weight: bold;
     margin: 0;
     text-transform: uppercase;

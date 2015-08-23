@@ -78,7 +78,9 @@ jQuery(document).ready(function () {
 	    var x = jQuery(window).scrollTop();
 	    jQuery('#full-bg-breadimage-fixed').css('background-position', 'center ' + parseInt(x / 10) + 'px');
 	});
-	jQuery("h1.title").fitText(<?=$s ?>, { minFontSize: '20px' } );
+	// jQuery("h1.title").fitText(<?=$s ?>, { minFontSize: '20px' } );
+	var w = jQuery('#banner-title').width();
+	textFit(document.getElementById('banner-title'), {alignVert: true, widthOnly: true, minFontSize: 18, maxFontSize: 43});
 });
 </script>
 <?php global $advertica_shortname; ?>
@@ -90,16 +92,17 @@ jQuery(document).ready(function () {
 			<div id="full-bg-breadimage-fixed"></div>
 			<span class="img-cover"></span>
 			<div class="container">
-				<div class="row-fluid">
+<!-- 				<div class="row-fluid">
 					<div class="container_inner clearfix">
-						<h1 class="title"><?= empty($headtitle) ? get_the_title() : $headtitle; ?></h1>
+ -->						<h1 id="banner-title" class="title">
+							<?= empty($headtitle) ? get_the_title() : $headtitle; ?></h1>
 						<?php  if(sketch_get_option($advertica_shortname."_hide_bread") == 'true') {
 							// if ((class_exists('advertica_breadcrumb_class'))) {$advertica_breadcumb->custom_breadcrumb();}
 						}
 						?>
-					</div>
+<!-- 					</div>
 				</div>
-			</div>
+ -->			</div>
 		</div>
 
 	<div class="page-content default-pagetemp">
