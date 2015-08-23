@@ -24,7 +24,7 @@ $post_slug=$post->post_name;
 if( $post_slug == 'news' | $post_slug == 'resources' | $post_slug == 'get-informed' || $post_slug == 'about-the-good-news-club' ){
 	$headtitle = 'Get Informed';
 	$subtitle = 'Stay Informed';
-	$bgphoto = '/images/bwphoto-boy-studying.jpg';
+	// $bgphoto = '/images/bwphoto-boy-studying.jpg';
 	$childpages = '';
 	foreach( array('about-the-good-news-club','parents','administrators','resources','news') as $slug ){
 		$subtitle_page = get_page_by_path($slug);
@@ -39,9 +39,9 @@ else{
 	}
 }
 if ( $childpages ) {
-	if( $subtitle_id == 18 ){
-			$bgphoto = '/images/bwphoto-boytyping.jpg';
-	}
+	// if( $subtitle_id == 18 ){
+	// 		$bgphoto = '/images/bwphoto-boytyping.jpg';
+	// }
 	// outpu the title
 	if( empty($subtitle) ) $subtitle = get_post_meta ( $subtitle_id, 'sidebar_title', true );
 	if( empty($headtitle) ) $headtitle = get_post_meta ( $subtitle_id, 'header_title', true );
