@@ -11,7 +11,6 @@
  *
  */
 get_header(); 
-die('index');
 ?>
 
 <?php global $advertica_shortname; ?>

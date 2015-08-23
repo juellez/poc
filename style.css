@@ -66,7 +66,7 @@ Tags: blue, gray, orange, pink, purple, dark, light, two-columns, right-sidebar,
 
 .clear {clear:both;}
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {background: transparent;border: 0;margin: 0;padding: 0;vertical-align: baseline;}
-body { color: #777777;  font-family: 'OpenSansRegular';  font-size: 14px;  line-height: 175%; font-weight:300;}
+body { color: #777777;  background-color: #fff; font-family: 'OpenSansRegular';  font-size: 14px;  line-height: 175%; font-weight:300;}
 p, dl, hr, h1, h2, h3, h4, h5, h6, ol, ul, pre, table, address, fieldset, figure {font-weight: 300;  margin-bottom: 20px;  line-height: 175%;}
 h1, h2, h3, h4, h5, h6{ color: #555555;font-family: 'OpenSansSemiBold';font-weight: normal;letter-spacing: -0.5px;}
 pre {  overflow: auto;  width: 98%;}
@@ -92,10 +92,6 @@ a img {border: none;}
 a {text-decoration: none;color: #1e96a5;}
 a, img, a img, input[type="text"], input[type="password"], input, textarea {outline:none;}
 a:hover{ color: #555; }
-
-
-body.page { background-color: #F1F1F1; }
-body.front-page { background-color: #fff; }
 
 
 /* =Header
@@ -194,10 +190,23 @@ body.page-template-template-front-page-php #main{margin-top:0 !important;}
 .skepost input.file, .skepost input.button {  margin-right: 24px;  }
 .skepost label {  color: #888;  font-size: 12px;  }
 .skepost select {  margin: 0 0 24px 0;  }
-.skepost h1 { line-height: 120%; }
 .skepost sup, .skepost sub {  font-size: 10px;  }
 .skepost blockquote.left {  float: left;  margin-left: 0;  margin-right: 24px;  text-align: right;  width: 33%;}
 .skepost blockquote.right {  float: right;  margin-left: 24px;  margin-right: 0;  text-align: left;  width: 33%;}
+
+#content .skepost h1 {     line-height: 120%;
+    font-family: 'OpenSansregular',sans-serif;
+    font-size: 24px; }
+#content .skepost h2 {     line-height: 140%;
+    font-size: 18px;
+    margin-bottom: 10px; }
+#content .skepost h3 { margin: 0 0 5px; }
+#content .skepost, #content .skepost p {     font-size: 14px;
+    line-height: 20px;
+    margin: 0 0 10px 0; } 
+
+
+
 body.page .edit-link {  clear: both;  display: block;  } 
 .skepost-meta a {  text-decoration:none; font-weight: 400; color: #999999;}
 .skepost-meta span { display: inline-block;margin-right: 1px;padding-top: 0;}
@@ -222,23 +231,47 @@ body.page .edit-link {  clear: both;  display: block;  }
 .bread-title-holder{background-color: #F8F8F8;display: block;height: 180px; position: relative; width: 100%;  }
 .bread-title-holder .container { display: table;height: 100%; position: relative;}
 .bread-title-holder .container .row-fluid { display: table-cell; vertical-align: middle;}
-.bread-title-holder  .cont_nav {display: none; margin-top:11px; position: relative;}
+.bread-title-holder .cont_nav {display: none; margin-top:11px; position: relative;}
 .bread-title-holder .cont_nav_inner p{margin:0;color:#fff;}
+
+.bread-title-holder h1.title {    
+    font-size: 1.8vw;
+    line-height: 120%;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+}
+.bread-title-holder .cont_nav_inner a,.bread-title-holder .cont_nav_inner p{font-size:12px;}
+.bread-title-holder .skt-breadcrumbs-separator { color: #666666;font-family: 'Trebuchet MS';font-size: 10px;letter-spacing: -1px;margin: 0 3px;position: relative;}
+#full-bg-breadimage-fixed{ 
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 0;
+    bottom: 0;
+    height: 250px;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    background-size: cover;
+}
 
 /* = front css
 -------------------------------------------------------------- */
 .page #featured-box {
-    background-color: #fff;
+    background-color: #F1F1F1;
     padding: 80px 0;
     margin: 0;
-    -webkit-box-shadow: 0px -2px 15px rgba(180, 180, 180, 0.15);
-    -moz-box-shadow:    0px -2px 15px rgba(180, 180, 180, 0.15);
-    box-shadow:         0px -2px 15px rgba(180, 180, 180, 0.15);
+    -webkit-box-shadow: inset 0px 10px 15px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 10px 15px -9px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 10px 15px -9px rgba(0,0,0,0.75);
 }
 .front-page #featured-box{
+    background-color: #fff;
     margin-top:75px;
     padding: 0;
     box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
 }
 .skt-section{margin-top:65px;}
 .skt-iconbox.iconbox-top {text-align: center;}
@@ -273,27 +306,6 @@ body.page .edit-link {  clear: both;  display: block;  }
 .bread-title-holder{   overflow: hidden;position: relative;} 
 .full-content-box{ padding: 60px 0 50px;position: relative; }
 .full-content-box .span5 > h2 {line-height: 28px;}
-.bread-title-holder h1.title {    
-    font-size: 44px;
-    line-height: 30px;
-    font-weight: bold;
-    position: absolute;
-    margin: 0;
-    bottom: 22px;     letter-spacing: 2px; text-transform: uppercase;
-}
-.bread-title-holder .cont_nav_inner a,.bread-title-holder .cont_nav_inner p{font-size:12px;}
-.bread-title-holder .skt-breadcrumbs-separator { color: #666666;font-family: 'Trebuchet MS';font-size: 10px;letter-spacing: -1px;margin: 0 3px;position: relative;}
-#full-bg-breadimage-fixed{ 
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: 0;
-    bottom: 0;
-    height: 250px;
-    overflow: hidden;
-    position: absolute;
-    width: 100%;
-    background-size: cover;
-}
 #full-division-box,#full-static-box{ background-attachment: fixed; background-repeat: repeat; background-size: cover; -webkit-background-size: cover; -moz-background-size: cover; height: 100%;overflow: hidden;width: 100%;  box-shadow: 0 -2px 3px -1px rgba(0, 0, 0, 0.06) inset; } 
 #full-static-box {box-shadow:none;background-position:center;}
 
@@ -500,7 +512,7 @@ tfoot td {padding: 9px 5px;}
 
 /* =Main Sidebars
 -------------------------------------------------------------- */
-#sidebar { float:right; }
+#sidebar { float:right; padding-top: 20px; }
 #sidebar  .skeside {width:100%;float:left;margin-bottom: 25px;}
 .front-page #sidebar {  padding-left: 0;  }
 #main .ske_widget ul {  margin-left: 0;  }
@@ -761,15 +773,17 @@ line-height: 100%; letter-spacing: 2px; }
 }
 .textwidget blockquote { margin-left: 0; padding-left: 0;}
 .widget_text { font-size: 12px; margin-left: 15px;}
-#sidebar_2, #sidebar_2 h3 { color: rgb(162,162,162); margin-left: 15px; }
-#sidebar_2 h3 { font-size: 16px; font-family: 'Sanchez',serif; line-height: 120%; }
+#sidebar_2, #sidebar_2 h3 { color: rgb(162,162,162); margin-left: 15px; font-size: 15px; }
+#sidebar_2 h3 {
+    line-height: 120%;
+    color: #000;
+    margin-bottom: 0; font-size: 15px; }
 #sidebar_2 a { color: rgb(126,126,126); }
 #sidebar_2 a.button, #sidebar_2 a:hover { color: #2DC6D8;}
 #sidebar_2 a.button:hover { background-color: #fff; }
 #sidebar_2 .side-menu ul li { margin: 10px 0 10px 0;
     border-bottom: 1px solid rgb(226,226,226);
     padding: 10px 0 15px 15px; }
-#content h2 { font-family: 'Sanchez',serif; line-height: 130%;}
 
 /* = jumper links
 ------------------------------------------------------------------------ */

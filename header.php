@@ -32,7 +32,6 @@
 
 	  ga('create', 'UA-66440037-1', 'auto');
 	  ga('send', 'pageview');
-
 	</script>
 </head>
 <body <?php body_class(); ?> >

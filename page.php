@@ -48,6 +48,7 @@ if ( $childpages ) {
 	$sidebar = '<h3>' . $subtitle . '</h3>';
     $sidebar .= '<ul>' . $childpages . '</ul>';
 }
+$headtitle = get_the_title();
 ?>
 
 <style>
@@ -61,6 +62,7 @@ jQuery(document).ready(function () {
 	    var x = jQuery(window).scrollTop();
 	    jQuery('#full-bg-breadimage-fixed').css('background-position', 'center ' + parseInt(x / 10) + 'px');
 	});
+	jQuery("h1.title").fitText(2.6, { minFontSize: '20px' } );
 });
 </script>
 <?php global $advertica_shortname; ?>
@@ -76,7 +78,7 @@ jQuery(document).ready(function () {
 					<div class="container_inner clearfix">
 						<h1 class="title"><?= empty($headtitle) ? get_the_title() : $headtitle; ?></h1>
 						<?php  if(sketch_get_option($advertica_shortname."_hide_bread") == 'true') {
-							if ((class_exists('advertica_breadcrumb_class'))) {$advertica_breadcumb->custom_breadcrumb();}
+							// if ((class_exists('advertica_breadcrumb_class'))) {$advertica_breadcumb->custom_breadcrumb();}
 						}
 						?>
 					</div>
@@ -90,7 +92,6 @@ jQuery(document).ready(function () {
 				<div id="content" class="span8">
 					<div class="post clearfix" id="post-<?php the_ID(); ?>">
 						<div class="skepost">
-							<?php if( !empty($headtitle) ): ?><h1><?php the_title(); ?></h1><?php endif; ?>
 							<?php the_content(); ?>
 							<?php wp_link_pages(__('<p><strong>Pages:</strong> ','advertica-lite'), '</p>', __('number','advertica-lite')); ?>
 						</div>
