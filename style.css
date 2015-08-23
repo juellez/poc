@@ -859,3 +859,15 @@ line-height: 100%; letter-spacing: 2px; }
     font-family: OpenSansbold;
     letter-spacing: 1px; }
 #content table th { text-transform: uppercase; }
+
+ol.emphasis {
+   margin-left: -30px;
+}
+ol.emphasis li {
+    font-size: 22px; font-family: 'OpenSansbold',sans-serif;
+    color: #ff0000;
+}
+ol.emphasis li p {
+   color: #777777;  font-family: 'OpenSansregular',sans-serif;
+}
+
