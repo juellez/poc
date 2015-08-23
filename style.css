@@ -228,14 +228,20 @@ body.page .edit-link {  clear: both;  display: block;  }
 
 /* = page title css
 -------------------------------------------------------------- */
-.bread-title-holder{background-color: #F8F8F8;display: block;height: 180px; position: relative; width: 100%;  }
-.bread-title-holder .container { display: table;height: 100%; position: relative;}
+.bread-title-holder{ background-color: #F8F8F8;display: block;height: 180px; position: relative; width: 100%;  }
+.bread-title-holder .container { display: table;height: 100%; position: relative;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 0;
+    background-size: cover;
+}
 .bread-title-holder .container .row-fluid { display: table-cell; vertical-align: middle;}
 .bread-title-holder .cont_nav {display: none; margin-top:11px; position: relative;}
 .bread-title-holder .cont_nav_inner p{margin:0;color:#fff;}
 
 .bread-title-holder h1.title {    
     font-size: 1.8vw;
+    color: #fff;
     line-height: 120%;
     font-weight: bold;
     margin: 0;
@@ -252,6 +258,9 @@ body.page .edit-link {  clear: both;  display: block;  }
     overflow: hidden;
     position: absolute;
     width: 100%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 0;
     background-size: cover;
 }
 

@@ -24,7 +24,7 @@ $post_slug=$post->post_name;
 if( $post_slug == 'news' | $post_slug == 'resources' | $post_slug == 'get-informed' || $post_slug == 'about-the-good-news-club' ){
 	$headtitle = 'Get Informed';
 	$subtitle = 'Stay Informed';
-	$bgphoto = 'bwphoto-boy-studying.jpg';
+	$bgphoto = '/images/bwphoto-boy-studying.jpg';
 	$childpages = '';
 	foreach( array('about-the-good-news-club','parents','administrators','resources','news') as $slug ){
 		$subtitle_page = get_page_by_path($slug);
@@ -40,7 +40,7 @@ else{
 }
 if ( $childpages ) {
 	if( $subtitle_id == 18 ){
-			$bgphoto = 'bwphoto-boytyping.jpg';
+			$bgphoto = '/images/bwphoto-boytyping.jpg';
 	}
 	// outpu the title
 	if( empty($subtitle) ) $subtitle = get_post_meta ( $subtitle_id, 'sidebar_title', true );
@@ -48,13 +48,29 @@ if ( $childpages ) {
 	$sidebar = '<h3>' . $subtitle . '</h3>';
     $sidebar .= '<ul>' . $childpages . '</ul>';
 }
+
+if (has_post_thumbnail( $post->ID ) ){
+	$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
+	$bgphoto = $image[0];
+}
 $headtitle = get_the_title();
+$headbkg = get_post_meta ( $post->ID, 'header_bkg', true );
+// for our dynamic header sizing
+if( strlen($headtitle > 30) ) $s = 3.8;
+else $s = 2.6;
 ?>
 
 <style>
-#full-bg-breadimage-fixed { 
-	background-image: url('/images/<?= empty($bgphoto) ? 'bwphoto-kids.jpg' : $bgphoto ?>');
+/* .bread-title-holder .container { */
+#full-bg-breadimage-fixed {
+	background-image: url('<?= empty($bgphoto) ? '/images/bwphoto-kids.jpg' : $bgphoto ?>');
 }
+<?php if( !empty($headbkg) ): ?>
+.img-cover{
+	background-color: <?=$headbkg ?>;
+	opacity: .8;
+}
+<?php endif; ?>
 </style>
 <script>
 jQuery(document).ready(function () {
@@ -62,7 +78,7 @@ jQuery(document).ready(function () {
 	    var x = jQuery(window).scrollTop();
 	    jQuery('#full-bg-breadimage-fixed').css('background-position', 'center ' + parseInt(x / 10) + 'px');
 	});
-	jQuery("h1.title").fitText(2.6, { minFontSize: '20px' } );
+	jQuery("h1.title").fitText(<?=$s ?>, { minFontSize: '20px' } );
 });
 </script>
 <?php global $advertica_shortname; ?>
