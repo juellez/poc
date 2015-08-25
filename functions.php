@@ -25,29 +25,50 @@
  *
  */
 function advertica_widgets_init() {
-	register_sidebar(array(
-		'name' => 'Page Sidebar',
-		'before_widget' => '<li id="%1$s" class="ske-container %2$s">',
-		'after_widget' => '</li>',
-		'before_title' => '<h3 class="ske-title">',
-		'after_title' => '</h3>',
-	));
-	register_sidebar(array(
-		'name' => 'Blog Sidebar',
-		'before_widget' => '<li id="%1$s" class="ske-container %2$s">',
-		'after_widget' => '</li>',
-		'before_title' => '<h3 class="ske-title">',
-		'after_title' => '</h3>',
-	));
-	register_sidebar(array(
-		'name' => 'Footer Sidebar',
-		'before_widget' => '<div id="%1$s" class="ske-footer-container span3 ske-container %2$s">',
-		'after_widget' => '</div>',
-		'before_title' => '<h3 class="ske-title ske-footer-title">',
-		'after_title' => '</h3>',
-	));
+	// register_sidebar(array(
+	// 	'name' => 'AboutUs Sidebar',
+	// 	'before_widget' => '<li id="%1$s" class="ske-container %2$s">',
+	// 	'after_widget' => '</li>',
+	// 	'before_title' => '<h3 class="ske-title">',
+	// 	'after_title' => '</h3>',
+	// ));
 }
 add_action( 'widgets_init', 'advertica_widgets_init' );
+
+add_action( 'init', 'create_post_type' );
+function create_post_type() {
+  register_post_type( 'sidebar',
+    array(
+      'labels' => array(
+        'name' => __( 'Sidebars' ),
+        'singular_name' => __( 'Sidebar' )
+      ),
+      'public' => false,
+      'show_ui' => true,
+      'has_archive' => false,
+    )
+  );
+}
+
+function poccat_init() {
+	// create a new taxonomy
+	register_taxonomy(
+		'poc-cat',
+		array('page','sidebar'),
+		array(
+			'label' => __( 'POC Category' ),
+			'rewrite' => false,
+			'capabilities' => array(
+				'assign_terms' => 'edit_pages',
+				'edit_terms' => 'publish_pages'
+			),
+			'public' => false,
+			'show_ui' => true,
+			'hierarchical' => true,
+		)
+	);
+}
+add_action( 'init', 'poccat_init' );
 
 /**
  * Sets up theme defaults and registers the various WordPress features that
