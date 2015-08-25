@@ -56,7 +56,7 @@ function poccat_init() {
 		'poc-cat',
 		array('page','sidebar'),
 		array(
-			'label' => __( 'POC Category' ),
+			'label' => __( 'Sidebar Section' ),
 			'rewrite' => false,
 			'capabilities' => array(
 				'assign_terms' => 'edit_pages',
