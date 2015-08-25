@@ -475,7 +475,7 @@ h3#reply-title {  margin: 18px 0;  }
 .ske_widget ul.menu{font-size:12px;float: none;width:100%;}
 .ske_widget ul.menu li{float:none;}
 .ske_widget ul.menu li a {margin-left:3px;}
-.ske_widget ul ul {list-style: none;  margin-left:0px;}
+#main .ske_widget ul ul {list-style: none;  margin-left:-15px;}
 .ske_search #s {width: 60%;  }
 .ske_search label {display: none;  }
 .error404 #searchform input[type="text"],
@@ -782,7 +782,8 @@ line-height: 100%; letter-spacing: 2px; }
 }
 .textwidget blockquote { margin-left: 0; padding-left: 0;}
 .widget_text { font-size: 12px; margin-left: 15px;}
-#sidebar_2, #sidebar_2 h3 { color: rgb(162,162,162); margin-left: 15px; font-size: 15px; }
+#sidebar_2, #sidebar_2 h3 { color: rgb(162,162,162); font-size: 15px; }
+#sidebar_2 { margin-left: 15px; }
 #sidebar_2 h3 {
     line-height: 120%;
     color: #000;
