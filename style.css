@@ -207,14 +207,15 @@ body.page-template-template-front-page-php #main{margin-top:0 !important;}
     line-height: 26px;
     margin-bottom: 0;
 }
-#content .skepost p.intro { margin-top: 12px; }
-#content .skepost h3 { margin: 0; font-size: 18px; line-height: 150%; }
+#content .skepost h3 { margin: 0; font-size: 18px; line-height: 23px; }
 #content .skepost, #content .skepost p {     
     font-size: 14px;
     line-height: 21px;
     margin: 0 0 10px 0; } 
 #content .skepost ul li, #content .skepost ol li { margin-bottom: .8em; line-height: 150%; }
-
+#content .skepost h1.pgintro,
+#content .skepost h2.pgintro,
+#content .skepost h3.pgintro { margin-bottom: 12px; }
 
 body.page .edit-link {  clear: both;  display: block;  } 
 .skepost-meta a {  text-decoration:none; font-weight: 400; color: #999999;}
