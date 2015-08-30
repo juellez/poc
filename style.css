@@ -67,7 +67,7 @@ Tags: blue, gray, orange, pink, purple, dark, light, two-columns, right-sidebar,
 .clear {clear:both;}
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {background: transparent;border: 0;margin: 0;padding: 0;vertical-align: baseline;}
 body { color: #777777;  background-color: #fff; font-family: 'OpenSansRegular';  font-size: 14px;  line-height: 148%; font-weight:300;}
-p, dl, hr, h1, h2, h3, h4, h5, h6, ol, ul, pre, table, address, fieldset, figure {font-weight: 300;  margin-bottom: 20px;  line-height: 175%;}
+p, dl, hr, h1, h2, h3, h4, h5, h6, ol, pre, table, address, fieldset, figure {font-weight: 300;  margin-bottom: 20px;  line-height: 175%;}
 h1, h2, h3, h4, h5, h6{ color: #555555;font-family: 'OpenSansSemiBold';font-weight: normal;letter-spacing: -0.5px;}
 pre {  overflow: auto;  width: 98%;}
 embed {max-width: 100%;}
@@ -78,7 +78,7 @@ dl {margin: 0 0 24px;float: left;}
 dt {font-weight: 400;}
 dd {margin-bottom: 18px;}
 blockquote { border-radius: 2px; padding:8px 5px 8px 20px;  margin-right: 10px;  margin-bottom: 10px; quotes: none;  font-family: 'open_sansitalic'; font-style: oblique; line-height: 22px;}
-blockquote em { font-style: none; }
+blockquote em { font-style: normal; }
 cite{font-weight: 400;}
 blockquote cite a{color: #FFFFFF;}
 iframe { max-width: 100%; width:100%;outline: none;border:none;overflow:hidden;border:none;}
@@ -136,6 +136,7 @@ body.page-template-template-front-page-php #main{margin-top:0 !important;}
 #skenav a {color: #333333; display: block; font-size: 13px; line-height: 100%; padding: 49px 22px 12px; text-decoration: none; text-transform: capitalize; transition: color 0.1s linear 0s, background 0.1s linear 0s; -webkit-transition: color 0.1s linear 0s, background 0.1s linear 0s;  	-moz-transition: color 0.1s linear 0s, background 0.1s linear 0s; -o-transition: color 0.1s linear 0s, background 0.1s linear 0s; } 
 #header.skehead-headernav-shrink #skenav a{     line-height: 100%;
     padding-top: 26px; }
+#header.skehead-headernav-shrink #skenav ul ul a { padding: 13px 22px; }
 #skenav ul ul {  position: absolute;  top: 100%;  left: 0px;  float: left;  width: 200px;  z-index: 99999;  }
 #skenav ul .sub-menu li ,#skenav ul ul li {  display: block; width:100%;  }
 #skenav ul .children li:first-child,  #skenav ul .sub-menu li:first-child {  border-top: none;  }
@@ -189,6 +190,7 @@ body.page-template-template-front-page-php #main{margin-top:0 !important;}
 .skepost-meta abbr:hover {  border-bottom: 1px dotted #666;  }
 .skepost {clear: both; font-size: 16px; line-height: 175%; }
 .skepost strong { color: #000; }
+.skepost strong { color: #000; letter-spacing: 0; }
 .skepost img {margin-bottom: 10px;  }
 .skepost input {  margin: 0 0 24px 0;  }
 .skepost input.file, .skepost input.button {  margin-right: 24px;  }
@@ -198,14 +200,14 @@ body.page-template-template-front-page-php #main{margin-top:0 !important;}
 .skepost blockquote.left {  float: left;  margin-left: 0;  margin-right: 24px;  text-align: right;  width: 33%;}
 .skepost blockquote.right {  float: right;  margin-left: 24px;  margin-right: 0;  text-align: left;  width: 33%;}
 
-#content .skepost h1 {     line-height: 120%;
+#content .skepost h1 {     line-height: 150%;
     font-family: 'OpenSansregular',sans-serif;
-    font-size: 24px; }
-#content .skepost h2 {     line-height: 140%;
+    font-size: 24px; margin-bottom: 0; }
+#content .skepost h2 {     line-height: 150%;
     font-size: 22px;
-    margin-bottom: 10px; }
-#content .skepost h3 { margin: 0 0 5px; font-size: 18px; }
-#content .skepost h4 { margin: 0 0 5px; }
+    margin-bottom: 0; }
+#content .skepost h3 { margin: 0; font-size: 18px; line-height: 150%; }
+#content .skepost h4 { margin: 0; line-height: 150%;}
 #content .skepost, #content .skepost p {     
     font-size: 14px;
     line-height: 21px;
