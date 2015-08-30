@@ -878,13 +878,12 @@ ol.emphasis > li {
     color: #ff0000;
     clear: left;
 }
+ol.emphasis > li ul li,
+ol.emphasis > li ol li,
 ol.emphasis > li p {
-   color: #777777;  font-family: 'OpenSansregular',sans-serif;
-}
-ol.emphasis > li ul li {
-   color: #777;
+   color: #777777;  
+   font-family: 'OpenSansregular',sans-serif;
    font-size: 14px;
-   clear: none;
 }
 .skepost .button {
     border: 2px solid #d8493a;
