@@ -19,11 +19,11 @@
 <div id="front-content-box" class="skt-section">
 	<div class="container">
 		<h2>Should I send my child to the Good News Club?</h2>
-		<h3>10 Questions for Parents Making this Important Decision</h3>
+		<h3>10 Questions for Parents Making This Important Decision</h3>
 		<!-- h3>Should I send my child to the Good News Club?</h3 -->
 		<div class="cta-main">
 		 <hr class="double" />
-		 <div class="btn-pad"><a class="button main" href="/parents/10-questions/">Get the Questions</a></div>
+		 <div class="btn-pad"><a class="button main" href="/parents/10-questions/">Ask the Questions</a></div>
 		</div>
 	</div>
 </div>
