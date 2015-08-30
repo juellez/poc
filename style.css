@@ -203,8 +203,11 @@ body.page-template-template-front-page-php #main{margin-top:0 !important;}
 #content .skepost h1 {     line-height: 150%;
     font-family: 'OpenSansregular',sans-serif;
     font-size: 24px; margin-bottom: 0; }
-#content .skepost h2 {     line-height: 150%;
-    margin-bottom: 0; }
+#content .skepost h2 {     font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 0;
+}
+#content .skepost p.intro { margin-top: 12px; }
 #content .skepost h3 { margin: 0; font-size: 18px; line-height: 150%; }
 #content .skepost, #content .skepost p {     
     font-size: 14px;
