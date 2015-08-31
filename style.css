@@ -189,8 +189,7 @@ body.page-template-template-front-page-php #main{margin-top:0 !important;}
 .skepost-meta abbr {  border: none;  }
 .skepost-meta abbr:hover {  border-bottom: 1px dotted #666;  }
 .skepost {clear: both; font-size: 16px; line-height: 175%; }
-.skepost strong { color: #000; }
-.skepost strong { color: #000; letter-spacing: 0; }
+.skepost strong { font-family: 'OpenSansBold','OpenSansregular',sans-serif; }
 .skepost img {margin-bottom: 10px;  }
 .skepost input {  margin: 0 0 24px 0;  }
 .skepost input.file, .skepost input.button {  margin-right: 24px;  }
