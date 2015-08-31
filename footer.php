@@ -29,8 +29,10 @@ if($tweetfeedmeta == '1' || true){ ?>
 	<div id="full-twitter-box">
 		<div class="container">
 			<div class="row-fluid">
+				<!--
 				<img src="/images/twitter-white.png" alt="Twitter" class="footer-twitter" />
 				The latest tweets right here! <span class="footer-twitter-handle">via @protectoregonchildren</span>
+				-->
 			</div>
 		</div>
 	</div>
