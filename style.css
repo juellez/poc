@@ -67,7 +67,7 @@ Tags: blue, gray, orange, pink, purple, dark, light, two-columns, right-sidebar,
 .clear {clear:both;}
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {background: transparent;border: 0;margin: 0;padding: 0;vertical-align: baseline;}
 body { color: #777777;  background-color: #fff; font-family: 'OpenSansRegular';  font-size: 14px;  line-height: 148%; font-weight:300;}
-p, dl, hr, h1, h2, h3, h4, h5, h6, ol, pre, table, address, fieldset, figure {font-weight: 300;  margin-bottom: 20px;  line-height: 175%;}
+p, dl, hr, h1, h2, h3, h4, h5, h6, ol, pre, table, address, fieldset, figure {font-weight: 300;  margin-bottom: 20px;  line-height: 148%;}
 h1, h2, h3, h4, h5, h6{ color: #555555;font-family: 'OpenSansSemiBold';font-weight: normal;letter-spacing: -0.5px;}
 pre {  overflow: auto;  width: 98%;}
 embed {max-width: 100%;}
@@ -135,7 +135,7 @@ body.page-template-template-front-page-php #main{margin-top:0 !important;}
 #skenav .ske-menu .menu li, ul.menu li {  float: left;  position: relative;  margin-left: 0px;  list-style: none outside none;  }
 #skenav a {color: #333333; display: block; font-size: 13px; line-height: 100%; padding: 49px 22px 12px; text-decoration: none; text-transform: capitalize; transition: color 0.1s linear 0s, background 0.1s linear 0s; -webkit-transition: color 0.1s linear 0s, background 0.1s linear 0s;  	-moz-transition: color 0.1s linear 0s, background 0.1s linear 0s; -o-transition: color 0.1s linear 0s, background 0.1s linear 0s; } 
 #header.skehead-headernav-shrink #skenav a{     line-height: 100%;
-    padding-top: 26px; }
+    padding-top: 27px; }
 #header.skehead-headernav-shrink #skenav ul ul a { padding: 13px 22px; }
 #skenav ul ul {  position: absolute;  top: 100%;  left: 0px;  float: left;  width: 200px;  z-index: 99999;  }
 #skenav ul .sub-menu li ,#skenav ul ul li {  display: block; width:100%;  }
