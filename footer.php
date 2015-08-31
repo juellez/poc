@@ -65,7 +65,7 @@ if($tweetfeedmeta == '1' || true){ ?>
 				</div>
 				<div class="footer-list span2 alpha omega"><h4>Follow Us</h4>
 					<a href="http://facebook.com/protectoregonchildren" title="Facebook"><span class="footer-social sprite-facebook"></a>
-					<a href="http://twitter.com/protectoregonchildren" title="Twitter"><span class="footer-social sprite-twitter"></a>
+					<!-- <a href="http://twitter.com/protectoregonchildren" title="Twitter"><span class="footer-social sprite-twitter"></a> -->
 				</div>
 
 				<div class="clearfix"></div>
