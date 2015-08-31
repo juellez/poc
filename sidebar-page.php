@@ -21,7 +21,7 @@ global $advertica_shortname, $post, $sidebar;
 
 				if ( $sbq->have_posts() ) : while ( $sbq->have_posts() ) : $sbq->the_post(); ?>
 
-				<li class="ske-container side-menu"><?php the_content(); ?></li>
+				<li class="ske-container textwidget side-menu"><?php the_content(); ?></li>
 
 				<?php endwhile; endif;
 			}
@@ -35,7 +35,7 @@ global $advertica_shortname, $post, $sidebar;
 
                                 if ( $sbq->have_posts() ) : while ( $sbq->have_posts() ) : $sbq->the_post(); ?>
 
-                                <li class="ske-container side-menu"><?php the_content(); ?></li>
+                                <li class="ske-container textwidget side-menu"><?php the_content(); ?></li>
 
                                 <?php endwhile; endif;
                         }
@@ -49,7 +49,7 @@ global $advertica_shortname, $post, $sidebar;
 
                                 if ( $sbq->have_posts() ) : while ( $sbq->have_posts() ) : $sbq->the_post(); ?>
 
-                                <li class="ske-container side-menu"><?php the_content(); ?></li>
+                                <li class="ske-container textwidget side-menu"><?php the_content(); ?></li>
 
                                 <?php endwhile; endif;
                         }
