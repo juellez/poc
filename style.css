@@ -909,6 +909,29 @@ ol.emphasis > li p {
 }
 
 @media (max-width: 400px) {
+    body,
+    #footer .third_wrapper .copyright,
+    #footer .footer-list,
+    .footer-list h4,
+    #content .skepost,
+    #content .skepost p,
+    ol.emphasis > li p
+    {
+        font-size: 18px;
+        line-height: 148%;
+    }
+
+    #sidebar_2 h3
+    {
+        font-size: 18px;
+        line-height: 148%;
+    }
+
+    #content .skepost h3
+    {
+        font-size: 20px;        
+    }
+
     .poc-image-subhdr {
         top: 306px;
         bottom: inherit;
@@ -941,6 +964,13 @@ ol.emphasis > li p {
     }
     .page #featured-box {
         padding: 0 0 40px;
+    }
+
+    .bread-title-holder,
+    #full-bg-breadimage-fixed,
+    .bread-title-holder .container
+    {
+        height: 240px;
     }
 
 }
