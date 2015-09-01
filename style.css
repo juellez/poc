@@ -907,3 +907,26 @@ ol.emphasis > li p {
     background-color: #d8493a;
     color: #fff;
 }
+
+@media (max-width: 400px) {
+    .poc-image-subhdr {
+        top: 306px;
+        bottom: inherit;
+    }
+    .poc-image-subhdr div{
+        width: 80%;
+        padding: 20px;
+        font-size: 18px;
+    }
+    .full-banner h2 {
+        padding-top: 46px;
+        padding-left: 0;
+    }
+    .footer-list {
+        text-align: center;
+    }
+    .footer-list h4 {
+        margin-top: 1em;
+        margin-bottom: 0;
+    }
+}
