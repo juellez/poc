@@ -17,7 +17,7 @@
 	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 	<title><?php wp_title( '|', true, 'right' ); ?></title>
 	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-	<meta property="og:image" content="/images/protect-oregon-children-homepage.jpg" />
+	<meta property="og:image" content="http://protectoregonchildren.com/images/protect-oregon-children-homepage.jpg" />
 
 <!--[if IE 9]>
 	<meta http-equiv="X-UA-Compatible" content="IE=9" />
