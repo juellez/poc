@@ -82,8 +82,14 @@ jQuery(document).ready(function () {
 	    jQuery('#full-bg-breadimage-fixed').css('background-position', 'center ' + parseInt(x / 10) + 'px');
 	});
 	// jQuery("h1.title").fitText(<?=$s ?>, { minFontSize: '20px' } );
-	var w = jQuery('#banner-title').width();
-	textFit(document.getElementById('banner-title'), {alignVert: true, alignHoriz: true, widthOnly: true, minFontSize: 18, maxFontSize: 43});
+	var max = 43;
+	var wonly = true;
+	if( jQuery(document).width() < 400 ){
+		max = 34;
+		wonly = false;
+	}
+	// var w = jQuery('#banner-title').width();
+	textFit(document.getElementById('banner-title'), {alignVert: true, alignHoriz: true, widthOnly: wonly, minFontSize: 18, maxFontSize: max});
 });
 </script>
 <?php global $advertica_shortname; ?>
@@ -105,7 +111,7 @@ jQuery(document).ready(function () {
 						?>
 <!-- 					</div>
 				</div>
- -->			</div>
+ -->		</div>
 		</div>
 
 	<div class="page-content default-pagetemp">
