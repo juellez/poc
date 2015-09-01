@@ -929,4 +929,18 @@ ol.emphasis > li p {
         margin-top: 1em;
         margin-bottom: 0;
     }
+    .post-wrap .row-fluid .span1{
+        display: none;
+    }
+    .default-pagetemp #content .post,
+    #content .post {
+        padding-bottom: 0;
+    }
+    #main .ske_widget ul {
+        margin-left: -15px;
+    }
+    .page #featured-box {
+        padding: 0 0 40px;
+    }
+
 }
