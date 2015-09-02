@@ -60,7 +60,7 @@ if($tweetfeedmeta == '1' || true){ ?>
 					<br />
 					<a href="/get-involved">Join Us</a>
 					<br />
-					<a href="/donate">Donate</a>
+					<a href="/get-involved/donate">Donate</a>
 					<br />
 				</div>
 				<div class="footer-list span2 alpha omega"><h4>Follow Us</h4>
