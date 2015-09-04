@@ -549,35 +549,35 @@ function optionsframework_options() {
 		'type' => 'heading');
 
 		$options[] = array(
-			'name' => __('twitter_handle', 'advertica-lite'),
-			'desc' => __('', 'advertica-lite'),
+			'name' => __('Your Twitter Handle', 'advertica-lite'),
+			'desc' => __('Enter only your Twitter username, w/out the "@" if you\'d like the Twitter bar to display.', 'advertica-lite'),
 			'id' => $advertica_shortname.'_twitter_handle',
 			'std' => "",
 			'type' => 'text');
 		$options[] = array(
-			'name' => __('twitter_consumer_key', 'advertica-lite'),
-			'desc' => __('', 'advertica-lite'),
+			'name' => __('Twitter Consumer Key', 'advertica-lite'),
+			'desc' => __('Enter your Twitter API Key and Secret if you\'d like your recent tweets to automatically display.', 'advertica-lite'),
 			'id' => $advertica_shortname.'_twitter_consumer_key',
 			'std' => "",
 			'type' => 'text');
 		$options[] = array(
-			'name' => __('twitter_consumer_secret', 'advertica-lite'),
-			'desc' => __('', 'advertica-lite'),
+			'name' => __('Twitter Consumer Secret', 'advertica-lite'),
+			'desc' => __('If you don\'t have one, log into <a href="https://apps.twitter.com" target="_blank">https://apps.twitter.com</a> to create an app.', 'advertica-lite'),
 			'id' => $advertica_shortname.'_twitter_consumer_secret',
 			'std' => "",
 			'type' => 'text');
-		$options[] = array(
-			'name' => __('twitter_access_token', 'advertica-lite'),
-			'desc' => __('', 'advertica-lite'),
-			'id' => $advertica_shortname.'_twitter_access_token',
-			'std' => "",
-			'type' => 'text');
-		$options[] = array(
-			'name' => __('twitter_access_token_secret', 'advertica-lite'),
-			'desc' => __('', 'advertica-lite'),
-			'id' => $advertica_shortname.'_twitter_access_token_secret',
-			'std' => "",
-			'type' => 'text');
+		// $options[] = array(
+		// 	'name' => __('twitter_access_token', 'advertica-lite'),
+		// 	'desc' => __('', 'advertica-lite'),
+		// 	'id' => $advertica_shortname.'_twitter_access_token',
+		// 	'std' => "",
+		// 	'type' => 'text');
+		// $options[] = array(
+		// 	'name' => __('twitter_access_token_secret', 'advertica-lite'),
+		// 	'desc' => __('', 'advertica-lite'),
+		// 	'id' => $advertica_shortname.'_twitter_access_token_secret',
+		// 	'std' => "",
+		// 	'type' => 'text');
 
 	//Footer	
 
