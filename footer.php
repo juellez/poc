@@ -75,7 +75,7 @@ if($tweetfeedmeta == '1' || true){ ?>
 				</div>
 				<div class="span8" id="footer-twitter-timeline"><?php
 					// result - do what you want
-					for ($i = 0; $i <= 3; $i++) {
+					for ($i = 0; $i <= 2; $i++) {
 						print('<span><a href="https://twitter.com/badnewsclub/status/'.$tweets[$i]['id'].'" target="_blank">');
 					    print_r($tweets[$i]['text']);
 					    print('</a></span>');
