@@ -738,8 +738,16 @@ padding: 0 0 20px 0; }
 .footer-social { background-image: url(/images/social-icons-sprite.png); display: inline-block; background-repeat: no-repeat; width: 36px; height: 49px; }
 .footer-twitter { margin-left: -5px; margin-right: 10px; margin-bottom: -3px; }
 .footer-twitter-handle { color: #303132; }
-#footer-twitter-timeline  { font-size: 12px; line-height: 120%; }
+#footer-twitter-timeline  { font-size: 12px; line-height: 120%; position: relative;}
 #footer-twitter-timeline a { color: #fff; }
+#footer-twitter-timeline span {
+    position: absolute; 
+    top: 2px; 
+    left: 0px; 
+    right: 0px; 
+    bottom: 2px; 
+}
+
 .sprite-linkedin { background-position: -8px 0px; }
 .sprite-facebook { background-position: -54px 0px; }
 .sprite-twitter { background-position: -100px 0px; }

@@ -75,7 +75,7 @@ if($tweetfeedmeta == '1' || true){ ?>
 				</div>
 				<div class="span8" id="footer-twitter-timeline"><?php
 					// result - do what you want
-					for ($i = 1; $i <= 1; $i++) {
+					for ($i = 0; $i <= 3; $i++) {
 						print('<span><a href="https://twitter.com/badnewsclub/status/'.$tweets[$i]['id'].'" target="_blank">');
 					    print_r($tweets[$i]['text']);
 					    print('</a></span>');
@@ -140,19 +140,20 @@ if($tweetfeedmeta == '1' || true){ ?>
 
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 <script>
-// ##### Simple example 1 #####
-// A simple example to get my latest tweet and write to a HTML element with
-// id "example1". Also automatically hyperlinks URLS and user mentions and
-// hashtags.
-var config1 = {
-  "id": '639692570415656960',
-  "domId": 'example1',
-  "maxTweets": 1,
-  "enableLinks": true,
-  "showPermalinks": false
-};
-// twitterFetcher.fetch(config1);
+jQuery( document ).ready( function(){
 
+	jQuery("#footer-twitter-timeline > span:gt(0)").hide();
+
+	setInterval(function() { 
+	  jQuery('#footer-twitter-timeline > span:first')
+	    .fadeOut(1000)
+	    .next()
+	    .fadeIn(1000)
+	    .end()
+	    .appendTo('#footer-twitter-timeline');
+	},  6000);
+
+});
 </script>
 
 </body>
