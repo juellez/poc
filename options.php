@@ -542,6 +542,42 @@ function optionsframework_options() {
 		'std' => '#',
 		'type' => 'text');
 
+	//Twitter	
+
+	$options[] = array(
+		'name' => __('Twitter Settings', 'advertica-lite'),
+		'type' => 'heading');
+
+		$options[] = array(
+			'name' => __('twitter_handle', 'advertica-lite'),
+			'desc' => __('', 'advertica-lite'),
+			'id' => $advertica_shortname.'_twitter_handle',
+			'std' => "",
+			'type' => 'text');
+		$options[] = array(
+			'name' => __('twitter_consumer_key', 'advertica-lite'),
+			'desc' => __('', 'advertica-lite'),
+			'id' => $advertica_shortname.'_twitter_consumer_key',
+			'std' => "",
+			'type' => 'text');
+		$options[] = array(
+			'name' => __('twitter_consumer_secret', 'advertica-lite'),
+			'desc' => __('', 'advertica-lite'),
+			'id' => $advertica_shortname.'_twitter_consumer_secret',
+			'std' => "",
+			'type' => 'text');
+		$options[] = array(
+			'name' => __('twitter_access_token', 'advertica-lite'),
+			'desc' => __('', 'advertica-lite'),
+			'id' => $advertica_shortname.'_twitter_access_token',
+			'std' => "",
+			'type' => 'text');
+		$options[] = array(
+			'name' => __('twitter_access_token_secret', 'advertica-lite'),
+			'desc' => __('', 'advertica-lite'),
+			'id' => $advertica_shortname.'_twitter_access_token_secret',
+			'std' => "",
+			'type' => 'text');
 
 	//Footer	
 

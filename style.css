@@ -189,7 +189,7 @@ body.page-template-template-front-page-php #main{margin-top:0 !important;}
 .skepost-meta abbr {  border: none;  }
 .skepost-meta abbr:hover {  border-bottom: 1px dotted #666;  }
 .skepost {clear: both; font-size: 16px; line-height: 175%; }
-.skepost strong { font-family: 'OpenSansBold','OpenSansregular',sans-serif; }
+.skepost strong { font-weight: normal; font-family: 'OpenSansBold','OpenSansregular',sans-serif; }
 .skepost img {margin-bottom: 10px;  }
 .skepost input {  margin: 0 0 24px 0;  }
 .skepost input.file, .skepost input.button {  margin-right: 24px;  }
@@ -732,12 +732,14 @@ margin: -18px auto; }
     font-size: 14px;
 }
 #full-twitter-box {background: #D8493A none repeat scroll 0% 0%;
-color: #fff;
+color: #fff; font-size: 13px;
 padding: 0 0 20px 0; }
 
 .footer-social { background-image: url(/images/social-icons-sprite.png); display: inline-block; background-repeat: no-repeat; width: 36px; height: 49px; }
 .footer-twitter { margin-left: -5px; margin-right: 10px; margin-bottom: -3px; }
 .footer-twitter-handle { color: #303132; }
+#footer-twitter-timeline  { font-size: 12px; line-height: 120%; }
+#footer-twitter-timeline a { color: #fff; }
 .sprite-linkedin { background-position: -8px 0px; }
 .sprite-facebook { background-position: -54px 0px; }
 .sprite-twitter { background-position: -100px 0px; }
