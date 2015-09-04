@@ -46,7 +46,7 @@ if($tweetfeedmeta == '1' || true){ ?>
 				<div class="footer-list span3 alpha omega"><h4>Get Informed</h4>
 					<a href="/parents">For Parents</a>
 					<br />
-					<a href="/school-administrators">For School Administrators</a>
+					<a href="/administrators">For School Administrators</a>
 					<br />
 					<a href="/resources">Resources</a>
 					<br />
