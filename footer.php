@@ -71,7 +71,7 @@ if($tweetfeedmeta == '1' || true){ ?>
 				?>
 				<div class="span4">
 				<img src="/images/twitter-white.png" alt="Twitter" class="footer-twitter" />
-				The latest tweets right here <a href="http://twitter.com/<?=$twitter_handle ?>" class="footer-twitter-handle">via @<?=$twitter_handle ?>!</a>
+				The latest tweets right here <a href="http://twitter.com/<?=$twitter_handle ?>" target="_blank" class="footer-twitter-handle">via @<?=$twitter_handle ?>!</a>
 				</div>
 				<div class="span8" id="footer-twitter-timeline"><?php
 					// result - do what you want
