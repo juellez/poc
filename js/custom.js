@@ -409,6 +409,11 @@ vc_waypoints();
       $(this).attr('data-track-event-category','TopNav');
       $(this).attr('data-track-event-label', $(this).text() );
     });
+    $(".page_item a").each(function() {
+      $(this).addClass('ga-track');
+      $(this).attr('data-track-event-category','SideNav');
+      $(this).attr('data-track-event-label',$(this).text());
+    });
 
     $("a").each(function() {
       var href = this.href.toLowerCase();

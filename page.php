@@ -28,7 +28,7 @@ if( $post_slug == 'news' | $post_slug == 'resources' | $post_slug == 'get-inform
 	$childpages = '';
 	foreach( array('about-the-good-news-club','parents','administrators','resources','news') as $slug ){
 		$subtitle_page = get_page_by_path($slug);
-		$childpages .= '<li class="page_item page-item-'.$subtitle_page->ID.'"><a href="/'.$slug.'">'.$subtitle_page->post_title.'</a></li>';
+		$childpages .= '<li class="page_item page-item-'.$subtitle_page->ID.'"><a class="ga-track" data-track-event-category="SideNav" data-track-event-label="'.$subtitle_page->post_title.'" href="/'.$slug.'">'.$subtitle_page->post_title.'</a></li>';
 	}
 }
 else{
