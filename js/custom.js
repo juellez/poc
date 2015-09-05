@@ -408,14 +408,20 @@ vc_waypoints();
     $("a").each(function() {
       var href = this.href.toLowerCase();
 
+      // force external links to open in new windows
+      if (href.indexOf("http") === 0 && href.indexOf(hostname) === -1) {
+        $(this).addClass('external').on('click',function(e) {
+          $(this).attr('target','_blank');
+          ga('send', 'event', 'Outbound Link', 'click', href);
+          return true;
+        });
+      }
+
       // track this
       if( $(this).hasClass('ga-track') ){
-        $(this).click( function(e){
-
+        $(this).on('click',function(e){
           var eventCategory = 'Link';
-          // if( $(this).hasClass('ga-track-featurebox') ){
-          //   eventCategory = 'FeatureBox';
-          // }
+
           if( $(this).attr('data-track-event-category') ){
             eventCategory = $(this).attr('data-track-event-category');
           }
@@ -432,20 +438,8 @@ vc_waypoints();
               eventLabel = $(this).attr('title');
             }
           }
-
-          // console.log('track category',eventCategory,'action',eventAction,'label', eventLabel );
           ga('send', 'event', eventCategory, eventAction, eventLabel);
-          // window.location.href = href;
-        });
-      }
-
-      // force external links to open in new windows
-      if (href.indexOf("http") === 0 && href.indexOf(hostname) === -1) {
-        $(this).addClass('external').click(function(e) {
-
-          // console.log('track outbound link');
-          ga('send', 'event', 'Outbound Link', 'click', href);
-          // window.open(href, '_blank');
+          return true;
         });
       }
 
