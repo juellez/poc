@@ -398,6 +398,21 @@ vc_waypoints();
   }
 }));
 
+(function($) {
+  $(document).ready(function() {
+    var hostname = window.location.hostname.toLowerCase();    
+    $("a").each(function() {
+      var href = this.href.toLowerCase();
+      if (href.indexOf("http") === 0 && href.indexOf(hostname) === -1) {
+        $(this).addClass('external').click(function(e) {
+          e.preventDefault();
+          window.open(href, '_blank');
+        });
+      }
+    });
+  });
+})(jQuery);
+
 /*!
 * FitText.js 1.2
 *
