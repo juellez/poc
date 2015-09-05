@@ -1,5 +1,16 @@
+<?php
+function getGATitle($i){
+	global $advertica_shortname;
+	$title = sketch_get_option($advertica_shortname.$i,'advertica-lite');
+	if( $e = stristr($title, '<br>') ){
+		return substr($title, 0, -strlen($e));
+	}
+	else{
+		return $title;
+	}
+}
+?>
 <div id="full-client-box" class="skt-section container">
-
 		<?php if(sketch_get_option($advertica_shortname."_clientsec_title")): ?>
 			<h3 class="inline-border"><?php echo sketch_get_option($advertica_shortname."_clientsec_title"); ?></h3>
 			<span class="border_left"></span>
@@ -7,19 +18,31 @@
 		<?php endif; ?>
 		<div class="row">
 			<?php if(sketch_get_option($advertica_shortname.'_img1_icon')): ?>
-				<div class="col-sm-6 col-md-3 hpblock"><a href="<?= empty( sketch_get_option($advertica_shortname.'_img1_link') ) ? '#' : esc_url(sketch_get_option($advertica_shortname.'_img1_link','advertica-lite')); ?>" title="<?= empty(sketch_get_option($advertica_shortname.'_img1_title')) ? '' : sketch_get_option($advertica_shortname.'_img1_title','advertica-lite'); ?>"><img alt="client-logo" src="<?= empty(sketch_get_option($advertica_shortname.'_img1_icon')) ? '' : sketch_get_option($advertica_shortname.'_img1_icon','advertica-lite'); ?>"><h4><?= empty(sketch_get_option($advertica_shortname.'_img1_title')) ? '' : sketch_get_option($advertica_shortname.'_img1_title','advertica-lite'); ?></h4></a></div>
+				<div class="col-sm-6 col-md-3 hpblock"><a class="ga-track"
+					data-track-event-category="PhotoBox"
+					data-track-event-label="<?= getGATitle('_img1_title'); ?>"
+					href="<?= empty( sketch_get_option($advertica_shortname.'_img1_link') ) ? '#' : esc_url(sketch_get_option($advertica_shortname.'_img1_link','advertica-lite')); ?>" title="<?= empty(sketch_get_option($advertica_shortname.'_img1_title')) ? '' : sketch_get_option($advertica_shortname.'_img1_title','advertica-lite'); ?>"><img alt="client-logo" src="<?= empty(sketch_get_option($advertica_shortname.'_img1_icon')) ? '' : sketch_get_option($advertica_shortname.'_img1_icon','advertica-lite'); ?>"><h4><?= empty(sketch_get_option($advertica_shortname.'_img1_title')) ? '' : sketch_get_option($advertica_shortname.'_img1_title','advertica-lite'); ?></h4></a></div>
 			<?php endif; ?>
 
 			<?php if(sketch_get_option($advertica_shortname.'_img2_icon')): ?>
-				<div class="col-sm-6 col-md-3 hpblock"><a href="<?= empty( sketch_get_option($advertica_shortname.'_img2_link') ) ? '#' : esc_url(sketch_get_option($advertica_shortname.'_img2_link','advertica-lite')); ?>" title="<?= empty(sketch_get_option($advertica_shortname.'_img2_title')) ? '' : sketch_get_option($advertica_shortname.'_img2_title','advertica-lite'); ?>"><img alt="client-logo" src="<?= empty(sketch_get_option($advertica_shortname.'_img2_icon')) ? '' : sketch_get_option($advertica_shortname.'_img2_icon','advertica-lite'); ?>"><h4><?= empty(sketch_get_option($advertica_shortname.'_img2_title')) ? '' : sketch_get_option($advertica_shortname.'_img2_title','advertica-lite'); ?></h4></a></div>
+				<div class="col-sm-6 col-md-3 hpblock"><a class="ga-track"
+					data-track-event-category="PhotoBox"
+					data-track-event-label="<?= empty(sketch_get_option($advertica_shortname.'_img2_title')) ? '' : sketch_get_option($advertica_shortname.'_img2_title','advertica-lite'); ?>"
+					href="<?= empty( sketch_get_option($advertica_shortname.'_img2_link') ) ? '#' : esc_url(sketch_get_option($advertica_shortname.'_img2_link','advertica-lite')); ?>" title="<?= empty(sketch_get_option($advertica_shortname.'_img2_title')) ? '' : sketch_get_option($advertica_shortname.'_img2_title','advertica-lite'); ?>"><img alt="client-logo" src="<?= empty(sketch_get_option($advertica_shortname.'_img2_icon')) ? '' : sketch_get_option($advertica_shortname.'_img2_icon','advertica-lite'); ?>"><h4><?= empty(sketch_get_option($advertica_shortname.'_img2_title')) ? '' : sketch_get_option($advertica_shortname.'_img2_title','advertica-lite'); ?></h4></a></div>
 			<?php endif; ?>
 
 			<?php if(sketch_get_option($advertica_shortname.'_img3_icon')): ?>
-				<div class="col-sm-6 col-md-3 hpblock"><a href="<?= empty( sketch_get_option($advertica_shortname.'_img3_link') ) ? '#' : esc_url(sketch_get_option($advertica_shortname.'_img3_link','advertica-lite')); ?>" title="<?= empty(sketch_get_option($advertica_shortname.'_img3_title')) ? '' : sketch_get_option($advertica_shortname.'_img3_title','advertica-lite'); ?>"><img alt="client-logo" src="<?= empty(sketch_get_option($advertica_shortname.'_img3_icon')) ? '' : sketch_get_option($advertica_shortname.'_img3_icon','advertica-lite'); ?>"><h4><?= empty(sketch_get_option($advertica_shortname.'_img3_title')) ? '' : sketch_get_option($advertica_shortname.'_img3_title','advertica-lite'); ?></h4></a></div>
+				<div class="col-sm-6 col-md-3 hpblock"><a class="ga-track"
+					data-track-event-category="PhotoBox"
+					data-track-event-label="<?= empty(sketch_get_option($advertica_shortname.'_img3_title')) ? '' : sketch_get_option($advertica_shortname.'_img3_title','advertica-lite'); ?>"
+					href="<?= empty( sketch_get_option($advertica_shortname.'_img3_link') ) ? '#' : esc_url(sketch_get_option($advertica_shortname.'_img3_link','advertica-lite')); ?>" title="<?= empty(sketch_get_option($advertica_shortname.'_img3_title')) ? '' : sketch_get_option($advertica_shortname.'_img3_title','advertica-lite'); ?>"><img alt="client-logo" src="<?= empty(sketch_get_option($advertica_shortname.'_img3_icon')) ? '' : sketch_get_option($advertica_shortname.'_img3_icon','advertica-lite'); ?>"><h4><?= empty(sketch_get_option($advertica_shortname.'_img3_title')) ? '' : sketch_get_option($advertica_shortname.'_img3_title','advertica-lite'); ?></h4></a></div>
 			<?php endif; ?>
 
 			<?php if(sketch_get_option($advertica_shortname.'_img4_icon')): ?>
-				<div class="col-sm-6 col-md-3 hpblock"><a href="<?= empty( sketch_get_option($advertica_shortname.'_img4_link') ) ? '#' : esc_url(sketch_get_option($advertica_shortname.'_img4_link','advertica-lite')); ?>" title="<?= empty(sketch_get_option($advertica_shortname.'_img4_title')) ? '' : sketch_get_option($advertica_shortname.'_img4_title','advertica-lite'); ?>"><img alt="client-logo" src="<?= empty(sketch_get_option($advertica_shortname.'_img4_icon')) ? '' : sketch_get_option($advertica_shortname.'_img4_icon','advertica-lite'); ?>"><h4><?= empty(sketch_get_option($advertica_shortname.'_img4_title')) ? '' : sketch_get_option($advertica_shortname.'_img4_title','advertica-lite'); ?></h4></a></div>
+				<div class="col-sm-6 col-md-3 hpblock"><a class="ga-track"
+					data-track-event-category="PhotoBox"
+					data-track-event-label="<?= empty(sketch_get_option($advertica_shortname.'_img4_title')) ? '' : sketch_get_option($advertica_shortname.'_img4_title','advertica-lite'); ?>"
+					href="<?= empty( sketch_get_option($advertica_shortname.'_img4_link') ) ? '#' : esc_url(sketch_get_option($advertica_shortname.'_img4_link','advertica-lite')); ?>" title="<?= empty(sketch_get_option($advertica_shortname.'_img4_title')) ? '' : sketch_get_option($advertica_shortname.'_img4_title','advertica-lite'); ?>"><img alt="client-logo" src="<?= empty(sketch_get_option($advertica_shortname.'_img4_icon')) ? '' : sketch_get_option($advertica_shortname.'_img4_icon','advertica-lite'); ?>"><h4><?= empty(sketch_get_option($advertica_shortname.'_img4_title')) ? '' : sketch_get_option($advertica_shortname.'_img4_title','advertica-lite'); ?></h4></a></div>
 			<?php endif; ?>
 		</div>
 
