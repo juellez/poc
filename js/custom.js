@@ -411,7 +411,6 @@ vc_waypoints();
       // track this
       if( $(this).hasClass('ga-track') ){
         $(this).click( function(e){
-          e.preventDefault();
 
           var eventCategory = 'Link';
           // if( $(this).hasClass('ga-track-featurebox') ){
@@ -436,17 +435,17 @@ vc_waypoints();
 
           // console.log('track category',eventCategory,'action',eventAction,'label', eventLabel );
           ga('send', 'event', eventCategory, eventAction, eventLabel);
-          window.location.href = href;
+          // window.location.href = href;
         });
       }
 
       // force external links to open in new windows
       if (href.indexOf("http") === 0 && href.indexOf(hostname) === -1) {
         $(this).addClass('external').click(function(e) {
-          e.preventDefault();
+
           // console.log('track outbound link');
           ga('send', 'event', 'Outbound Link', 'click', href);
-          window.open(href, '_blank');
+          // window.open(href, '_blank');
         });
       }
 
