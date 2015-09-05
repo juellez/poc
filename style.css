@@ -918,7 +918,7 @@ ol.emphasis > li p {
     color: #fff;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 768px) {
     body,
     #footer .third_wrapper .copyright,
     #footer .footer-list,
@@ -975,7 +975,6 @@ ol.emphasis > li p {
     .page #featured-box {
         padding: 0 0 40px;
     }
-
     .bread-title-holder,
     #full-bg-breadimage-fixed,
     .bread-title-holder .container

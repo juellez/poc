@@ -830,7 +830,8 @@
 	}
 
 	#featured-box{margin-top:0;}
-	#featured-box .mid-box {width:100%;margin-left:0; margin-top: 80px;}
+	#featured-box .mid-box {width:100%;margin-left:0; margin-top: 60px; }
+	.front-page #featured-box { margin-top: 0; }
 	#skt-stream-sktmultisocialfeed-2 img ,
 	.ske-container.sktmultisocialstream li, 
 	#main .ske-container.sktmultisocialstream li{
