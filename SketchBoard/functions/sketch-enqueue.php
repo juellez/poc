@@ -9,7 +9,7 @@ global $advertica_shortname;
 function advertica_script_enqueqe() {
 	global $advertica_shortname;
 	if(!is_admin()) {
-		wp_enqueue_script('advertica_componentssimple_slide', get_template_directory_uri() .'/js/custom.js',array('jquery'),'1.1',1 );
+		wp_enqueue_script('advertica_componentssimple_slide', get_template_directory_uri() .'/js/custom.js',array('jquery'),'1.2',1 );
 		wp_enqueue_script("comment-reply");
 	}
 

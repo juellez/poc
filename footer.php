@@ -93,28 +93,58 @@ if($tweetfeedmeta == '1' || true){ ?>
 				<div class="copyright span4 alpha omega"> <?php echo stripslashes(sketch_get_option($advertica_shortname."_copyright")); ?> </div>
 
 				<div class="footer-list span3 alpha omega"><h4>Get Informed</h4>
-					<a href="/parents">For Parents</a>
+					<a class="ga-track"
+						data-track-event-category="Footer"
+						title="For Parents"
+						href="/parents">For Parents</a>
 					<br />
-					<a href="/administrators">For School Administrators</a>
+					<a class="ga-track"
+						data-track-event-category="Footer"
+						title="For School Administrators"
+						href="/administrators">For School Administrators</a>
 					<br />
-					<a href="/resources">Resources</a>
+					<a class="ga-track"
+						data-track-event-category="Footer"
+						title="Resources"
+						href="/resources">Resources</a>
 					<br />
-					<a href="/news">News</a>
+					<a class="ga-track"
+						data-track-event-category="Footer"
+						title="News"
+						href="/news">News</a>
 					<br />
 				</div>
 				<div class="footer-list span3 alpha omega"><h4>Get Involved</h4>
-					<a href="/get-involved/parents">Parents</a>
+					<a class="ga-track"
+						data-track-event-category="Footer"
+						title="Parents"
+						href="/get-involved/parents">Parents</a>
 					<br />
-					<a href="/get-involved/concerned-citizens">Concerned Citizens</a>
+					<a class="ga-track"
+						data-track-event-category="Footer"
+						title="Concerned Citizens"
+						href="/get-involved/concerned-citizens">Concerned Citizens</a>
 					<br />
-					<a href="/get-involved">Join Us</a>
+					<a class="ga-track"
+						data-track-event-category="Footer"
+						title="Join Us"
+						href="/get-involved">Join Us</a>
 					<br />
-					<a href="/get-involved/donate">Donate</a>
+					<a class="ga-track"
+						data-track-event-category="Footer"
+						title="Donate"
+						href="/get-involved/donate">Donate</a>
 					<br />
 				</div>
 				<div class="footer-list span2 alpha omega"><h4>Follow Us</h4>
-					<a href="http://facebook.com/protectoregonchildren" title="Facebook"><span class="footer-social sprite-facebook"></a>
-					<a href="http://twitter.com/badnewsclub" title="Twitter"><span class="footer-social sprite-twitter"></a>
+					<a class="ga-track"
+						target="_blank"
+						data-track-event-category="Footer"
+						href="http://facebook.com/protectoregonchildren" title="Facebook"><span class="footer-social sprite-facebook"></a>
+					<a class="ga-track"
+						target="_blank"
+						data-track-event-category="Footer"
+						href="http://twitter.com/badnewsclub" title="Twitter"><span class="footer-social sprite-twitter"></a>
 				</div>
 
 				<div class="clearfix"></div>
